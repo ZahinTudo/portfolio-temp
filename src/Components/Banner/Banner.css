@@ -1,0 +1,22 @@
+.banner {
+	padding: 3rem 2rem;
+}
+.banner .name {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 7.5rem;
+	line-height: 10rem;
+	color: #000000;
+}
+.banner .short-description {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 1.777rem;
+	line-height: 140%;
+	color: #000000;
+}
+.banner .short-description .word-bold {
+	font-weight: bold;
+}

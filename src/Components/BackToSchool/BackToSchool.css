@@ -1,0 +1,68 @@
+.backToSchool {
+	background: #f3d8c7;
+	min-height: 100vh;
+	overflow: hidden;
+	padding: 9rem 0 3rem 0;
+}
+.backToSchool .title {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 6.25rem;
+	line-height: 9rem;
+	color: #0b132b;
+}
+.backToSchool .short-description {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 1.125rem;
+	line-height: 160%;
+	color: #0b132b;
+}
+.backToSchool .play-btn {
+	top: 50%;
+	left: 50%;
+	z-index: 5;
+	transform: translate(-50%, -50%);
+}
+.backToSchool .coverage {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 2rem;
+	line-height: 160%;
+	color: #0b132b;
+}
+.backToSchool .coverage-details {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 1.25rem;
+	line-height: 160%;
+	color: #0b132b;
+}
+.media_image_wrapper {
+	display: grid;
+	grid-auto-flow: column;
+	grid-template-columns: auto;
+	/* cursor: grab; */
+}
+.media_image_wrapper:hover {
+	cursor: grab;
+}
+.media_image_wrapper.active {
+	cursor: grabbing;
+}
+.media_image_wrapper .img-wrapper {
+	width: 35rem;
+}
+.media_image_wrapper::-webkit-scrollbar {
+	display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.media_image_wrapper {
+	-ms-overflow-style: none; /* IE and Edge */
+	scrollbar-width: none; /* Firefox */
+}

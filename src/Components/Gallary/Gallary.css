@@ -1,0 +1,33 @@
+.gallary {
+	padding: 7rem 0;
+}
+.gallary .title {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 6.25rem;
+	line-height: 9rem;
+	color: #0b132b;
+}
+.gallary .sub-title {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 1.125rem;
+	line-height: 140%;
+	color: #0b132b;
+    margin-bottom: 2rem;
+}
+.gallary_wrapper {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 1rem;
+	padding: 3rem inherit;
+}
+@media (max-width: 600px) {
+	.gallary_wrapper {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		grid-gap: 1rem;
+	}
+}

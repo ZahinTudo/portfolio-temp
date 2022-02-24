@@ -1,0 +1,36 @@
+.header {
+	top: 0;
+	right: 0;
+	/* width: 100%; */
+	/* z-index: 5; */
+	/* min-height: 6rem; */
+}
+.header .btn,
+.navlink {
+	/* display: inline-block; */
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 1.5rem;
+	/* line-height: 140%; */
+	color: #faf9f9;
+	border-radius: 0;
+	border-bottom-left-radius: 1.5rem;
+}
+.big-menu {
+	display: none;
+	border-bottom-left-radius: 1.5rem;
+	width: 65vw;
+}
+.hoverBtn:hover .small-btn {
+	display: none !important;
+}
+.hoverBtn:hover .big-menu {
+	display: block !important;
+}
+
+@media screen and (max-width: 600px) {
+	.big-menu {
+		width: 100vw;
+	}
+}

@@ -1,0 +1,31 @@
+.footer .footer-resume {
+	background-color: #f3d8c7;
+}
+.footer .footer-resume .title {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 6.25rem;
+	line-height: 10rem;
+	color: #0b132b;
+}
+.footer .footer-resume .btn {
+	display: inline-block;
+	box-sizing: content-box;
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 2rem;
+	line-height: 4rem;
+	min-width: 10rem !important;
+	border-radius: 10px;
+}
+.footer .copyright {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 1rem;
+	line-height: 24px;
+	color: #0b132b;
+	padding: 1rem 0;
+}
