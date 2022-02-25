@@ -20,3 +20,9 @@
 .banner .short-description .word-bold {
 	font-weight: bold;
 }
+@media (max-width: 600px) {
+	.banner .name {
+		font-size: 4rem;
+		line-height: 8rem;
+	}
+}

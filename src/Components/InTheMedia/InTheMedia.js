@@ -12,7 +12,7 @@ export default function InTheMedia() {
 	}, []);
 	return (
 		<div className='inTheMedia' style={{ overflowX: "hidden" }}>
-			<div className='container'>
+			<div className='custom_container'>
 				<h3 className='title'>In the Media</h3>
 				<p className='title_brief pe-5'>
 					Earth is the third planet from the Sun and the only
@@ -23,7 +23,7 @@ export default function InTheMedia() {
 					billion years ago.
 				</p>
 			</div>
-			<div className='container '>
+			<div className='custom_container_left '>
 				<div style={{}} className='scroll_carousel'>
 					<div
 						className=' mediaImage_wrapper'
@@ -36,9 +36,7 @@ export default function InTheMedia() {
 									className='img-fluid'
 								/>
 								<div className='overlay_title position-absolute p-3'>
-									<span className='d-none title'>
-										{item.title}
-									</span>
+									<span className=' title'>{item.title}</span>
 									<div className='d-flex justify-content-between align-items-center px-2'>
 										<div className='col-6'>
 											<div style={{ width: "50%" }}>

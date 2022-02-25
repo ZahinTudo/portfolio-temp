@@ -5,7 +5,7 @@ export default function Footer() {
 	return (
 		<div className='footer'>
 			<div className='footer-resume'>
-				<div className=' container p-0 d-flex flex-wrap justify-content-between align-items-center'>
+				<div className='custom_container  d-flex flex-wrap justify-content-between align-items-center'>
 					<div className='col-12 col-md-6 '>
 						<h3 className='title'>Resume</h3>
 					</div>
@@ -19,7 +19,7 @@ export default function Footer() {
 					</div>
 				</div>
 			</div>
-			<div className='container copyright ps-2'>
+			<div className='custom_container_left copyright'>
 				2022 Copyright - Inaayat Passi. All rights reserved.
 			</div>
 		</div>

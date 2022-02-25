@@ -9,7 +9,7 @@ export default function Gallary() {
 	}, []);
 	return (
 		<div className='gallary '>
-			<div className='container'>
+			<div className='custom_container'>
 				<h3 className='title'>Photography Gallery</h3>
 				<p className='sub-title'>
 					Earth is the third planet from the Sun and the only
@@ -19,7 +19,7 @@ export default function Gallary() {
 					billion years ago.
 				</p>
 			</div>
-			<div className='gallary_wrapper container'>
+			<div className='gallary_wrapper custom_container'>
 				{data.map((item, ind) => (
 					<span key={ind}>
 						<img src={item.image} alt='' className='img-fluid' />

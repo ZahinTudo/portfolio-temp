@@ -1,5 +1,7 @@
 .footer .footer-resume {
 	background-color: #f3d8c7;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
 }
 .footer .footer-resume .title {
 	font-family: Poppins;
@@ -27,5 +29,18 @@
 	font-size: 1rem;
 	line-height: 24px;
 	color: #0b132b;
-	padding: 1rem 0;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+@media screen and (max-width: 600px) {
+	.footer .footer-resume .title {
+		font-size: 4rem;
+		line-height: 5.5rem;
+	}
+	.footer .footer-resume .btn {
+		
+		font-size: 1.3rem;	
+		min-width: 10rem !important;
+		
+	}
 }

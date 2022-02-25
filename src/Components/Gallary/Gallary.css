@@ -16,7 +16,7 @@
 	font-size: 1.125rem;
 	line-height: 140%;
 	color: #0b132b;
-    margin-bottom: 2rem;
+	margin-bottom: 2rem;
 }
 .gallary_wrapper {
 	display: grid;
@@ -29,5 +29,9 @@
 		display: grid;
 		grid-template-columns: repeat(1, 1fr);
 		grid-gap: 1rem;
+	}
+	.gallary .title {
+		font-size: 4rem;
+		line-height: 5.5rem;
 	}
 }

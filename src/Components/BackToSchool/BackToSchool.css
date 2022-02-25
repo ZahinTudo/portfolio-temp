@@ -12,6 +12,12 @@
 	line-height: 9rem;
 	color: #0b132b;
 }
+@media (max-width: 600px) {
+	.backToSchool .title {
+		font-size: 4rem;
+		line-height: 8rem;
+	}
+}
 .backToSchool .short-description {
 	font-family: Poppins;
 	font-style: normal;

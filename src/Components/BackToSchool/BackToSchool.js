@@ -13,7 +13,7 @@ export default function BackToSchool() {
 
 	return (
 		<section className='backToSchool  d-flex flex-wrap flex-column justify-content-center align-items-center'>
-			<div className='container'>
+			<div className='custom_container'>
 				<div className='d-flex flex-wrap justify-content-between align-items-center'>
 					<div className='col-12 col-md-6'>
 						<h3 className='title'>Back to School</h3>
@@ -42,9 +42,9 @@ export default function BackToSchool() {
 					</div>
 				</div>
 			</div>
-			<div className='container pt-5' style={{}}>
+			<div className='custom_container_left pt-5' style={{}}>
 				<div
-					style={{ overflow: "hidden", width: "91vw" }}
+					style={{ overflow: "hidden" }}
 					className='d-flex flex-wrap justify-content-center align-items-center'>
 					<div className='col-12 col-md-5'>
 						<h3 className='coverage'>News & Media Coverages</h3>
