@@ -1,0 +1,77 @@
+import React, { useEffect, useState } from "react";
+import dragScroll from "../../customHooks/dragScroll";
+import "./InTheMedia.css";
+
+export default function InTheMedia() {
+	const [data, setData] = useState([]);
+	dragScroll("mediaImage_wrapper");
+	useEffect(() => {
+		fetch("/inthemedia.json")
+			.then((res) => res.json())
+			.then((result) => setData(result));
+	}, []);
+	return (
+		<div className='inTheMedia' style={{ overflowX: "hidden" }}>
+			<div className='container'>
+				<h3 className='title'>In the Media</h3>
+				<p className='title_brief pe-5'>
+					Earth is the third planet from the Sun and the only
+					astronomical object known to harbor{" "}
+					<br className='d-none d-md-inline-block' /> life. According
+					to radiometric dating estimation and other evidence, Earth
+					formed over 4.5 <br className='d-none d-md-inline-block' />{" "}
+					billion years ago.
+				</p>
+			</div>
+			<div className='container '>
+				<div style={{}} className='scroll_carousel'>
+					<div
+						className=' mediaImage_wrapper'
+						style={{ overflowX: "scroll", overflowY: "hidden" }}>
+						{data.map((item, ind) => (
+							<div className='inTheMedia_img position-relative'>
+								<img
+									src={item.image}
+									alt=''
+									className='img-fluid'
+								/>
+								<div className='overlay_title position-absolute p-3'>
+									<span className='d-none title'>
+										{item.title}
+									</span>
+									<div className='d-flex justify-content-between align-items-center px-2'>
+										<div className='col-6'>
+											<div style={{ width: "50%" }}>
+												<img
+													src={item.media}
+													alt=''
+													className='img-fluid'
+												/>
+											</div>
+											<div className='date'>
+												{item.date}
+											</div>
+										</div>
+										<div className='col-6 text-end viewFullNews'>
+											<span className='me-2'>
+												View Full News
+											</span>
+											<span>
+												<img
+													className='img-fluid'
+													src='/assets/linkArrow.png'
+													alt=''
+													srcset=''
+												/>
+											</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						))}
+					</div>
+				</div>
+			</div>
+		</div>
+	);
+}

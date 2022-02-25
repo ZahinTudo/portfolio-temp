@@ -7,6 +7,7 @@ import BackToSchool from "./Components/BackToSchool/BackToSchool";
 import Footer from "./Components/Footer/Footer";
 import Gallary from "./Components/Gallary/Gallary";
 import Header from "./Components/Header/Header";
+import InTheMedia from "./Components/InTheMedia/InTheMedia";
 
 function App() {
 	return (
@@ -15,6 +16,7 @@ function App() {
 			<Banner />
 			<BackToSchool />
 			<Gallary />
+			<InTheMedia />
 			<Footer />
 		</>
 	);
