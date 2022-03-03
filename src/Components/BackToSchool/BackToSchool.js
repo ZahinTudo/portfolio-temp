@@ -26,18 +26,27 @@ export default function BackToSchool() {
 					</div>
 					<div className='col-12 col-md-5'>
 						<div className='position-relative'>
-							<img
+							{/* <img
 								src='/assets/video-image.png'
 								alt=''
 								className='img-fluid'
-							/>
-							<span className='play-btn position-absolute'>
+							/> */}
+							<video
+								width='100%'
+								height='300'
+								poster='/assets/video-image.png'
+								controls>
+								<source
+									src='/assets/introVideo.mp4'
+									type='video/mp4'></source>
+							</video>
+							{/* <span className='play-btn position-absolute'>
 								<img
 									src='/assets/play-btn.png'
 									alt=''
 									className='img-fluid'
 								/>
-							</span>
+							</span> */}
 						</div>
 					</div>
 				</div>

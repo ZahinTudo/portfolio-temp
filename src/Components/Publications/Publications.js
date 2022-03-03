@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from "react";
-import ResearchDetailsCarousel from "./ResearchDetailsCarousel/ResearchDetailsCarousel";
-import ResearchImageCarousel from "./ResearchImageCarousel/ResearchImageCarousel";
-import "./ResearchWork.css";
+import "./Publications.css";
+import PublicationsDetailsCarousel from "./PublicationsDetailsCarousel/PublicationsDetailsCarousel";
+import PublicationsImageCarousel from "./PublicationsImageCarousel/PublicationsImageCarousel";
 
-export default function ResearchWork() {
+export default function Publications() {
 	const [Data, setData] = useState([]);
 	const [page, setPage] = useState(1);
 	const [TotalPage, setTotalPage] = useState(Data.length);
 	useEffect(() => {
-		fetch("/researchWork.json")
+		fetch("/publications.json")
 			.then((res) => res.json())
 			.then((result) => {
 				setData(result);
@@ -17,18 +17,18 @@ export default function ResearchWork() {
 	}, []);
 
 	return (
-		<section className='researchWork py-5'>
+		<section className='publications py-5'>
 			<div className='custom_container_left'>
-				<h2 className='Head_title'>Research Works</h2>
-				<div className='d-flex flex-wrap'>
+				<h2 className='Head_title'>Essays & Publications</h2>
+				<div className='d-flex flex-wrap my-4'>
 					<div className='col-12 col-md-6 detail_cards'>
-						<ResearchDetailsCarousel
+						<PublicationsDetailsCarousel
 							data={Data}
 							setPage={setPage}
 						/>
-						<div className='my-4'>
+						<div className="my-4">
 							<span
-								className='research-prev-btn'
+								className='publications-prev-btn'
 								style={{ cursor: "pointer" }}>
 								<img
 									src='/assets/leftArrow.png'
@@ -40,7 +40,7 @@ export default function ResearchWork() {
 								{page}/{TotalPage}
 							</span>
 							<span
-								className='research-next-btn'
+								className='publications-next-btn'
 								style={{ cursor: "pointer" }}>
 								<img
 									src='/assets/rightArrow.png'
@@ -51,7 +51,10 @@ export default function ResearchWork() {
 						</div>
 					</div>
 					<div className='col-12 col-md-6 imagecarousel'>
-						<ResearchImageCarousel data={Data} setPage={setPage} />
+						<PublicationsImageCarousel
+							data={Data}
+							setPage={setPage}
+						/>
 					</div>
 				</div>
 			</div>

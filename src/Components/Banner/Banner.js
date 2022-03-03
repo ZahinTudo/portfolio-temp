@@ -16,8 +16,7 @@ export default function Banner() {
 			<div className='col-12 col-md-7 px-3'>
 				<h3 className='name my-0'>Inaayat Passi</h3>
 				<p className='short-description my-0'>
-					A <span className='word-bold'>student</span> and a
-					<span className='word-bold'>changemaker</span> with a goal
+					A <span className='word-bold'>student</span> and a <span className='word-bold'> changemaker</span> with a goal
 					to make the world a <br /> better place to live for everyone
 				</p>
 			</div>

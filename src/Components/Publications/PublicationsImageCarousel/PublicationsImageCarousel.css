@@ -1,0 +1,58 @@
+.publications .imagecarousel .swiper {
+	width: 100%;
+	height: 100%;
+}
+
+.publications .imagecarousel .swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	background: #fff;
+
+	/* Center slide text vertically */
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+}
+
+.publications .imagecarousel .swiper-slide img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.publications .imagecarousel .swiper-slide {
+	width: 60%;
+}
+.publications .imagecarousel .swiper-slide-prev {
+	position: relative;
+}
+.publications .imagecarousel .swiper-slide-prev::after,
+.publications .imagecarousel .swiper-slide-next::after {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(
+		45deg,
+		rgba(196, 196, 196, 0.308),
+		rgba(196, 196, 196, 0.508)
+	);
+	left: 0;
+	top: 0;
+}
+
+@media (max-width: 600px) {
+	.publications .imagecarousel .swiper-slide {
+		width: 100%;
+	}
+}

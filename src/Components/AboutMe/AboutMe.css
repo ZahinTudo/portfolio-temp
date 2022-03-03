@@ -1,0 +1,36 @@
+.aboutme {
+	background: #bee3db;
+}
+.aboutme .title {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 6.25rem;
+	line-height: 10rem;
+	color: #0b132b;
+}
+.aboutme .self_brief {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 1.125rem;
+	line-height: 160%;
+	color: #0b132b;
+}
+.aboutme .page {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 1.125rem;
+	line-height: 160%;
+	color: #0b132b;
+}
+.aboutme .socials > a {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 1.5rem;
+	line-height: 140%;
+	color: #0b132b;
+	text-decoration: none;
+}

@@ -1,0 +1,54 @@
+.researchWork .imagecarousel .swiper {
+	width: 100%;
+	height: 100%;
+}
+
+.researchWork .imagecarousel .swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	background: #fff;
+
+	/* Center slide text vertically */
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+}
+
+.researchWork .imagecarousel .swiper-slide img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.researchWork .imagecarousel .swiper-slide {
+	width: 60%;
+}
+.researchWork .imagecarousel .swiper-slide-prev {
+	position: relative;
+}
+.researchWork .imagecarousel .swiper-slide-prev::after,
+.researchWork .imagecarousel .swiper-slide-next::after {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: #c4c4c433;
+	left: 0;
+	top: 0;
+}
+
+@media (max-width: 600px) {
+	.researchWork .imagecarousel .swiper-slide {
+		width: 100%;
+	}
+}

@@ -10,15 +10,19 @@ import Header from "./Components/Header/Header";
 import InTheMedia from "./Components/InTheMedia/InTheMedia";
 import EnvironmentInitiative from "./Components/EnvironmentInitiative/EnvironmentInitiative";
 import ResearchWork from "./Components/ResearchWork/ResearchWork";
+import Publications from "./Components/Publications/Publications";
+import AboutMe from "./Components/AboutMe/AboutMe";
 
 function App() {
 	return (
 		<>
 			<Header />
 			<Banner />
+			<AboutMe />
 			<BackToSchool />
-			{/* <ResearchWork /> */}
+			<ResearchWork />
 			<EnvironmentInitiative />
+			<Publications />
 			<Gallary />
 			<InTheMedia />
 			<Footer />
