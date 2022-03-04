@@ -1,9 +1,6 @@
 .header {
 	top: 0;
 	right: 0;
-	/* width: 100%; */
-	/* z-index: 5; */
-	/* min-height: 6rem; */
 }
 .header .btn,
 .navlink {
@@ -15,22 +12,29 @@
 	/* line-height: 140%; */
 	color: #faf9f9;
 	border-radius: 0;
+	text-decoration: none;
 	border-bottom-left-radius: 1.5rem;
 }
+.navlink:hover {
+	color: #faf9f9;
+}
+
 .big-menu {
-	display: none;
+	display: block;
 	border-bottom-left-radius: 1.5rem;
 	width: 65vw;
 }
-.hoverBtn:hover .small-btn {
+/* .hoverBtn:hover .small-btn {
 	display: none !important;
 }
 .hoverBtn:hover .big-menu {
 	display: block !important;
-}
+} */
 
 @media screen and (max-width: 600px) {
 	.big-menu {
 		width: 100vw;
+		height: 100vh;
+		border-bottom-left-radius: 0rem;
 	}
 }

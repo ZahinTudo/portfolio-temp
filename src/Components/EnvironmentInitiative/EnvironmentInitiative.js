@@ -2,26 +2,29 @@ import React from "react";
 import "./EnvironmentInitiative.css";
 export default function EnvironmentInitiative() {
 	return (
-		<section className='envinitiative'>
-			<div className='custom_container_left'>
+		<section id='envinitiative' className='envinitiative'>
+			<div className='custom_container'>
 				<div className='d-flex flex-wrap'>
-					<div className='col-12 col-md-5'>
-						<h3 className='title'>
-							Environment <br />
-							Initiative
-						</h3>
+					<div className='col-12'>
+						<h3 className='title'>Environment Initiative</h3>
 						<p className='title_brief'>
-							Earth is the third planet from the Sun and the only{" "}
+							“There is no Planet B” is a phrase that has stuck
+							with me since I first heard it several years{" "}
+							<br className='d-none d-md-inline-block' /> ago.
+							Inspired by this I’ve tried to do my part to promote
+							sustainability and environmental{" "}
 							<br className='d-none d-md-inline-block' />
-							astronomical object known to harbor life. According
-							to <br className='d-none d-md-inline-block' />
-							radiometric dating estimation and other evidence,
-							Earth
-							<br className='d-none d-md-inline-block' /> formed
-							over 4.5 billion years ago.
+							awareness through various initiatives, including
+							spearheading community-wide waste{" "}
+							<br className='d-none d-md-inline-block' />
+							segregation initiatives through Mission RGB,
+							developing an environmental handbook and
+							<br className='d-none d-md-inline-block' />{" "}
+							curriculum, and leading food waste reduction efforts
+							in my school.
 						</p>
 					</div>
-					<div className='col-12 col-md-7'>
+					{/* <div className='col-12 col-md-7'>
 						<div className='image_wrapper'>
 							<span>
 								<img
@@ -40,42 +43,55 @@ export default function EnvironmentInitiative() {
 								/>
 							</span>
 						</div>
-					</div>
+					</div> */}
 				</div>
 			</div>
-			<div className='custom_container_left'>
-				<div className='d-flex flex-wrap  handbook'>
+			<div className='custom_container'>
+				<div className='d-flex flex-wrap align-items-center  handbook'>
 					<div className='col-12 col-md-5'>
-						<h3 className='title'>The Green Handbook</h3>
-						<h6 className='writer'>~ Inaayat Passi</h6>
+						<h3 className='title'>
+							The Green Handbook{" "}
+							<span className='writer ms-2'>
+								by Inaayat Passi
+							</span>
+						</h3>
+
 						<p className='title_brief' style={{}}>
-							Nunc nunc vitae mauris eu. Leo vitae maecenas
-							consequat orci malesuada dui, consectetur. Fames
-							magna purus sollicitudin cursus. Lacinia purus
-							lectus varius turpis porttitor in sapien blandit. In
-							pellentesque adipiscing arcu est id libero diam
-							vitae enim. Tristique mauris ultricies lacus mi sit
-							mauris feugiat aliquet at. At risus quam neque
-							pharetra duis tellus. Scelerisque purus pellentesque
-							ultrices integer sed. Nec dignissim felis aenean
-							consequat mi vitae. Sed ultricies porta neque
-							accumsan, nunc, nunc, eget. Nisl ac sed fermentum
-							faucibus egestas dolor. Phasellus integer at ac ut
-							dictumst at. Sed nisl mattis a sit accumsan odio
-							malesuada suspendisse. Libero vulputate id mauris
-							fermentum ac, nulla lectus et gravida. Eu bibendum
-							convallis aliquam quam tortor, tellus sagittis.
-							Elementum fames dignissim quam non dictum tempor,
-							imperdiet. Hendrerit lectus varius tempor, nunc,
-							sodales odio. Id luctus magna scelerisque dignissim
-							rhoncus laoreet. Quam sagittis dolor justo ligula
-							leo eget venenatis vitae. Sagittis parturient sed
-							pellentesque feugiat. Orci, morbi ipsum a semper.
-							Quis feugiat risus amet nunc cursus semper erat
-							elementum. Metus diam, ac sed non in. Bibendum
-							consectetur eget at pellentesque euismod morbi
-							fringilla nunc, elit. Auctor tortor pellentesque ac
-							gravida nisl tellus mauris eget. Nulla.
+							<p>
+								One of the biggest issues confronting our planet
+								today is climate change. In fact, it is more
+								appropriate to term it as a very real and
+								impending climate ‘emergency’ or ‘crisis’. The
+								effects of such a climate crisis have already
+								started manifesting in more ways than one and it
+								is only deteriorating every year. Hence, the
+								time to act is now. This is our planet and each
+								one of us is a stakeholder in it. As such, it
+								becomes imperative for us to be aware of the
+								significance of the climate crisis and do our
+								part in mitigating it. While interacting with my
+								peers, I came to the realization that a lot of
+								youngsters, as well as children, are gradually
+								learning the importance of protecting the
+								environment. But very few of them know how to
+								move forward and implement their ideas.
+							</p>{" "}
+							<br />{" "}
+							<p>
+								In the spirit of encouraging such efforts
+								towards sustainability, I have put together the
+								Green Handbook, a student-facing educational
+								resource. I hope this makes it easier for
+								students to think about how to help protect the
+								environment and implement their ideas by
+								volunteering and starting projects in their own
+								communities. Each chapter has been specifically
+								designed to include topics that are educational.
+								They also incorporate fun activities that can
+								help drive change and in its own capacity, allow
+								the new generation to see a greener and cleaner
+								tomorrow.
+							</p>
 						</p>
 						<div className='mt-5'>
 							<span className='me-2 viewPdf'>View PDF</span>
@@ -96,6 +112,62 @@ export default function EnvironmentInitiative() {
 								alt=''
 								srcset=''
 							/>
+						</div>
+					</div>
+				</div>
+				<div className='d-flex flex-wrap align-items-center  handbook'>
+					<div className='col-12 col-md-5 d-flex justify-content-start'>
+						<div className='handbook_image rgb_mission'>
+							<img
+								className='img-fluid'
+								src='/assets/envinitiative/missionrgb.png'
+								alt=''
+								srcset=''
+							/>
+						</div>
+					</div>
+					<div className='col-12 col-md-7'>
+						<h3 className='title mt-5 mt-md-0'>Mission RGB</h3>
+
+						<p
+							className='title_brief rgb_mission'
+							style={{
+								textAlign: "justify",
+							}}>
+							<p>
+								Mission RGB is a youth-led movement that began
+								with a simple colour scheme: Red, Green, Blue.
+								These three colours form the basis of a
+								recycling management system: red for hazardous
+								waste, green for compost and blue for
+								recyclables. Mission RGB is a holistic
+								initiative that seeks to entirely transform the
+								way people think about waste management, thus
+								significantly reducing their contribution to the
+								waste problem in Delhi.
+							</p>{" "}
+							<br />
+							<p>
+								Through door-to-door awareness and pledge
+								drives, we managed to convince over 80% of
+								households in Sunder Nagar to begin waste
+								segregation and home composting. We are
+								currently in the process of setting up a
+								collective community composting system, as well
+								as having talks with Residents Welfare
+								Association of Nizamuddin to expand Mission RGB
+								operations to their neighbourhood too.
+							</p>
+						</p>
+						<div className='my-5'>
+							<span className='me-2 viewPdf'>View PDF</span>
+							<span>
+								<img
+									src='/assets/blackLinkArrow.png'
+									alt=''
+									className='img-fluid'
+								/>
+							</span>
 						</div>
 					</div>
 				</div>

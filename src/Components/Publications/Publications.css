@@ -9,6 +9,14 @@
 	line-height: 9rem;
 	color: #0b132b;
 }
+.publications .short_brief {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 1.125rem;
+	line-height: 160%;
+	color: #0b132b;
+}
 .publications .page {
 	font-family: Poppins;
 	font-style: normal;

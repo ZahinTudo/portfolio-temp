@@ -11,7 +11,10 @@ export default function InTheMedia() {
 			.then((result) => setData(result));
 	}, []);
 	return (
-		<div className='inTheMedia' style={{ overflowX: "hidden" }}>
+		<section
+			id='media'
+			className='inTheMedia'
+			style={{ overflowX: "hidden" }}>
 			<div className='custom_container'>
 				<h3 className='title'>In the Media</h3>
 				<p className='title_brief pe-5'>
@@ -70,6 +73,6 @@ export default function InTheMedia() {
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 }

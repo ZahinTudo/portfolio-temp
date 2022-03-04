@@ -30,8 +30,8 @@
 	color: #0b132b;
 }
 .envinitiative .handbook {
-	padding-top: 8rem;
-	padding-bottom: 8rem;
+	padding-top: 4rem;
+	/* padding-bottom: 4rem; */
 }
 .envinitiative .handbook .title {
 	font-family: Poppins;
@@ -56,7 +56,15 @@
 	font-size: 1rem;
 	line-height: 1.5rem;
 	color: #0b132b;
+	/* padding-right: 10rem; */
+}
+.envinitiative .handbook .title_brief.rgb_mission {
 	padding-right: 10rem;
+}
+.envinitiative .handbook .handbook_image.rgb_mission {
+	width: 75%;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
 }
 .envinitiative .handbook .handbook_image {
 	width: 60%;
@@ -80,5 +88,11 @@
 	.envinitiative .title {
 		font-size: 4rem;
 		line-height: 5.5rem;
+	}
+	.envinitiative .handbook .title_brief.rgb_mission {
+		padding-right: 0rem;
+	}
+	.envinitiative .handbook .handbook_image.rgb_mission {
+		width: 100%;
 	}
 }

@@ -61,7 +61,7 @@
 	cursor: grabbing;
 }
 .media_image_wrapper .img-wrapper {
-	width: 35rem;
+	width: 32rem;
 }
 .media_image_wrapper::-webkit-scrollbar {
 	display: none;

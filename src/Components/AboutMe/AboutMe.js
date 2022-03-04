@@ -16,7 +16,7 @@ export default function AboutMe() {
 			});
 	}, []);
 	return (
-		<div className='aboutme py-5'>
+		<div id='aboutme' className='aboutme py-5'>
 			<div className='custom_container d-flex flex-wrap'>
 				<div className='col-12 col-md-6'>
 					<h1 className='title'>About Me</h1>

@@ -24,6 +24,36 @@
 	grid-gap: 1rem;
 	padding: 3rem inherit;
 }
+.gallary_wrapper .img .image_overlay {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	font-size: 1.5rem;
+	color: white;
+	background: linear-gradient(45deg, rgba(0, 0, 0, 0.692), #94949400);
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	padding: 2rem;
+	overflow: hidden;
+	visibility: hidden;
+	opacity: 0;
+	transition: all 1s ease-in-out;
+	cursor: pointer;
+}
+.gallary_wrapper .img:hover .image_overlay {
+	opacity: 1;
+	visibility: visible;
+}
+.gallary_wrapper .img .image_overlay > a {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	font-size: 1.5rem;
+	color: white;
+	text-decoration: none;
+}
 @media (max-width: 600px) {
 	.gallary_wrapper {
 		display: grid;
