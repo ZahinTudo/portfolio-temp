@@ -16,7 +16,7 @@ export default function AboutMe() {
 			});
 	}, []);
 	return (
-		<div id='aboutme' className='aboutme py-5'>
+		<div id='aboutme' className='aboutme '>
 			<div className='custom_container d-flex flex-wrap'>
 				<div className='col-12 col-md-6'>
 					<h1 className='title'>About Me</h1>
@@ -33,14 +33,15 @@ export default function AboutMe() {
 						know me through my projects, research, writing and
 						photography account on Instagram.
 					</p>
-					<div className='d-flex justify-content-between align-items-center socials my-5'>
+					<div className='d-flex justify-content-between  align-items-center socials my-5'>
 						<a
 							target='_blank'
 							rel='noreferrer'
 							href='https://www.instagram.com/thebigpicture05/'>
-							<span>Instagram</span>
+							<span className='me-3'>Instagram</span>
 							<span>
 								<img
+									style={{ width: "12px" }}
 									src='/assets/blackLinkArrow.png'
 									alt=''
 									className='img-fluid'
@@ -51,9 +52,10 @@ export default function AboutMe() {
 							target='_blank'
 							rel='noreferrer'
 							href='https://www.instagram.com/thebigpicture05/'>
-							<span>Email</span>
+							<span className='me-3'>Email</span>
 							<span>
 								<img
+									style={{ width: "12px" }}
 									src='/assets/blackLinkArrow.png'
 									alt=''
 									className='img-fluid'
@@ -64,9 +66,10 @@ export default function AboutMe() {
 							target='_blank'
 							rel='noreferrer'
 							href='https://www.instagram.com/thebigpicture05/'>
-							<span>Resume</span>
+							<span className='me-3'>Resume</span>
 							<span>
 								<img
+									style={{ width: "12px" }}
 									src='/assets/blackLinkArrow.png'
 									alt=''
 									className='img-fluid'
@@ -76,7 +79,7 @@ export default function AboutMe() {
 					</div>
 				</div>
 				<div className='col-12 col-md-6'>
-					<div className='d-flex justify-content-center align-items-center '>
+					<div className='d-flex justify-content-end align-items-center '>
 						<div className='w-75'>
 							<img
 								src='/assets/aboutme.png'
@@ -87,7 +90,7 @@ export default function AboutMe() {
 					</div>
 				</div>
 			</div>
-			<div className='achievement custom_container'>
+			{/* <div className='achievement custom_container'>
 				<h1 className='mb-5'>My Achievements</h1>
 				<Achievement page={setPage} data={Data} />
 				<div className='my-4'>
@@ -113,7 +116,7 @@ export default function AboutMe() {
 						/>
 					</span>
 				</div>
-			</div>
+			</div> */}
 		</div>
 	);
 }

@@ -76,7 +76,6 @@ export default function EnvironmentInitiative() {
 								environment. But very few of them know how to
 								move forward and implement their ideas.
 							</p>{" "}
-							<br />{" "}
 							<p>
 								In the spirit of encouraging such efforts
 								towards sustainability, I have put together the
@@ -93,18 +92,26 @@ export default function EnvironmentInitiative() {
 								tomorrow.
 							</p>
 						</p>
-						<div className='mt-5'>
-							<span className='me-2 viewPdf'>View PDF</span>
-							<span>
-								<img
-									src='/assets/blackLinkArrow.png'
-									alt=''
-									className='img-fluid'
-								/>
-							</span>
+						<div className='mt-5 d-flex align-items-center'>
+							<a
+								className='d-inline-flex align-items-center'
+								style={{ textDecoration: "none" }}
+								href='https://drive.google.com/file/d/1afCY32SXA9o1XIjfRZMy5Kj4rjjAEt-s/view?usp=sharing'
+								target='_blank'
+								rel='noopener noreferrer'>
+								<span className='me-2 viewPdf'>View PDF</span>
+								<span>
+									<img
+										style={{ width: "16px" }}
+										src='/assets/blackLinkArrow.png'
+										alt=''
+										className='img-fluid'
+									/>
+								</span>
+							</a>
 						</div>
 					</div>
-					<div className='col-12 col-md-7 d-flex justify-content-center'>
+					<div className='col-12 col-md-7 d-flex justify-content-end'>
 						<div className='handbook_image'>
 							<img
 								className='img-fluid'
@@ -116,7 +123,7 @@ export default function EnvironmentInitiative() {
 					</div>
 				</div>
 				<div className='d-flex flex-wrap align-items-center  handbook'>
-					<div className='col-12 col-md-5 d-flex justify-content-start'>
+					<div className='col-12 col-md-6 d-flex justify-content-start'>
 						<div className='handbook_image rgb_mission'>
 							<img
 								className='img-fluid'
@@ -126,7 +133,7 @@ export default function EnvironmentInitiative() {
 							/>
 						</div>
 					</div>
-					<div className='col-12 col-md-7'>
+					<div className='col-12 col-md-6'>
 						<h3 className='title mt-5 mt-md-0'>Mission RGB</h3>
 
 						<p
@@ -145,8 +152,7 @@ export default function EnvironmentInitiative() {
 								way people think about waste management, thus
 								significantly reducing their contribution to the
 								waste problem in Delhi.
-							</p>{" "}
-							<br />
+							</p>
 							<p>
 								Through door-to-door awareness and pledge
 								drives, we managed to convince over 80% of
@@ -159,15 +165,23 @@ export default function EnvironmentInitiative() {
 								operations to their neighbourhood too.
 							</p>
 						</p>
-						<div className='my-5'>
-							<span className='me-2 viewPdf'>View PDF</span>
-							<span>
-								<img
-									src='/assets/blackLinkArrow.png'
-									alt=''
-									className='img-fluid'
-								/>
-							</span>
+						<div className='my-5 '>
+							<a
+								href='https://drive.google.com/file/d/1afCY32SXA9o1XIjfRZMy5Kj4rjjAEt-s/view?usp=sharing'
+								style={{ textDecoration: "none" }}
+								target='_blank'
+								className='d-inline-flex align-items-center'
+								rel='noopener noreferrer'>
+								<span className='me-2 viewPdf'>View PDF</span>
+								<span>
+									<img
+										style={{ width: "16px" }}
+										src='/assets/blackLinkArrow.png'
+										alt=''
+										className='img-fluid'
+									/>
+								</span>
+							</a>
 						</div>
 					</div>
 				</div>

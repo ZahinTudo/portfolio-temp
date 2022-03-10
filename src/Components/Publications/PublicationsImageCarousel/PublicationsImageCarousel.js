@@ -24,7 +24,7 @@ export default function PublicationsImageCarousel({ data, setPage }) {
 					nextEl: ".publications-next-btn",
 					prevEl: ".publications-prev-btn",
 				}}
-				className='publications'>
+				className='imagepublications'>
 				{data.map((item, ind) => (
 					<SwiperSlide key={ind}>
 						<img src={item.image} alt='' srcset='' />{" "}

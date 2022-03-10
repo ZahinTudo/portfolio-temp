@@ -17,20 +17,22 @@ export default function Publications() {
 	}, []);
 
 	return (
-		<section id='publications' className='publications py-5'>
+		<section id='publications' className='publications '>
 			<div className='custom_container_left'>
 				<h2 className='Head_title'>Essays & Publications</h2>
-				<p className="short_brief">
+				<p className='short_brief'>
 					My musings on Economics, Psychology and Environment,
-					submitted to academic <br /> competitions and published on various
-					platforms.
+					submitted to academic <br /> competitions and published on
+					various platforms.
 				</p>
 				<div className='d-flex flex-wrap my-4'>
 					<div className='col-12 col-md-6 detail_cards'>
-						<PublicationsDetailsCarousel
-							data={Data}
-							setPage={setPage}
-						/>
+						<div style={{ cursor: "grab" }}>
+							<PublicationsDetailsCarousel
+								data={Data}
+								setPage={setPage}
+							/>
+						</div>
 						<div className='my-4'>
 							<span
 								className='publications-prev-btn'
@@ -56,10 +58,12 @@ export default function Publications() {
 						</div>
 					</div>
 					<div className='col-12 col-md-6 imagecarousel'>
-						<PublicationsImageCarousel
-							data={Data}
-							setPage={setPage}
-						/>
+						<div style={{ cursor: "grab" }}>
+							<PublicationsImageCarousel
+								data={Data}
+								setPage={setPage}
+							/>
+						</div>
 					</div>
 				</div>
 			</div>

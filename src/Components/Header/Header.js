@@ -1,11 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Header.css";
 export default function Header() {
+	const [clicked, setClicked] = useState(false);
+	const [timeout, settimeout] = useState(null);
 	const clickHandle = (e) => {
-		const menu = document.getElementsByClassName("big-menu")[0];
-		menu.classList.add("d-none");
-		const small = document.getElementsByClassName("small-btn")[0];
-		small.classList.remove("d-none");
+		setClicked(true);
+		// alert("left");
+		clearTimeout(timeout);
+
+		const time = setTimeout(() => {
+			const menu = document.getElementsByClassName("big-menu")[0];
+			menu.classList.add("d-none");
+			const small = document.getElementsByClassName("small-btn")[0];
+			small.classList.remove("d-none");
+		}, 4000);
+		settimeout(time);
 	};
 	const hoverHandle = (e) => {
 		const menu = document.getElementsByClassName("big-menu")[0];
@@ -19,8 +28,9 @@ export default function Header() {
 			className=' header d-flex justify-content-end position-sticky'
 			style={{ zIndex: "500" }}>
 			<span
-				onMouseOver={hoverHandle}
+				onClick={hoverHandle}
 				onMouseLeave={clickHandle}
+				onMouseOver={() => clearTimeout(timeout)}
 				className='hoverBtn   '>
 				<span className='small-btn btn btn-dark border-0 py-4 px-5'>
 					<span className='me-3'>Menu</span>

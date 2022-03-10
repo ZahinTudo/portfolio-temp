@@ -39,7 +39,6 @@ export default function BackToSchool() {
 								building basic infrastructure for low-resourced
 								schools.
 							</p>{" "}
-							<br />{" "}
 							<p>
 								By collaborating with a South Delhi Municipal
 								Corporation (SDMC) school with a dilapidated
@@ -48,7 +47,6 @@ export default function BackToSchool() {
 								infrastructure and building a solace for the
 								students.
 							</p>{" "}
-							<br />{" "}
 							<p>
 								To initiate the project, I drafted an appeal for
 								funding from donors and secured a corporate
@@ -60,7 +58,7 @@ export default function BackToSchool() {
 								state, we met our goals of construction between
 								January 2021 and August 2021.
 							</p>{" "}
-							<br /> I continue to expand my initiative through
+							I continue to expand my initiative through
 							small-scale projects with other schools in the
 							state, including infrastructure upgradation,
 							collecting and donating electronic devices to ensure
@@ -106,11 +104,16 @@ export default function BackToSchool() {
 										key={ind}
 										className='p-3 ps-0 d-inline-block'
 										style={{ width: "25%" }}>
-										<img
-											src={item.media_image}
-											alt=''
-											className='img-fluid'
-										/>
+										<a
+											href={item.website}
+											target='_blank'
+											rel='noopener noreferrer'>
+											<img
+												src={item.media_image}
+												alt=''
+												className='img-fluid'
+											/>
+										</a>
 									</span>
 								))}
 							</div>

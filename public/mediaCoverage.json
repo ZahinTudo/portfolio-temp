@@ -1,17 +1,17 @@
 [
     {
         "media_image":"/assets/BackToSchool/logo1.png",
-        "website": "",
+        "website": "" ,
         "image":"/assets/BackToSchool/media1.png"
     },
     {
         "media_image":"/assets/BackToSchool/logo2.png",
-        "website": "",
+        "website": "https://www.bharattimes.com/",
         "image":"/assets/BackToSchool/media2.png"
     },
     {
         "media_image":"/assets/BackToSchool/logo3.png",
-        "website": "",
+        "website": "https://timesofindia.indiatimes.com/ ",
         "image":"/assets/BackToSchool/media3.png"
     },
     {
@@ -22,17 +22,17 @@
     ,
     {
         "media_image":"/assets/BackToSchool/logo7.png",
-        "website": "",
+        "website": "https://www.pehalnews.in/",
         "image":"/assets/BackToSchool/media3.png"
     },
     {
         "media_image":"/assets/BackToSchool/logo5.png",
-        "website": "",
+        "website": "https://thetimesbureau.com/",
         "image":"/assets/BackToSchool/media3.png"
     },
     {
         "media_image":"/assets/BackToSchool/logo6.png",
-        "website": "",
+        "website": "https://www.abplive.com/",
         "image":"/assets/BackToSchool/media3.png"
     }
 ]

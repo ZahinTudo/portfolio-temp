@@ -19,6 +19,32 @@
 	line-height: 140%;
 	color: #000000;
 	font-weight: bold;
+	height: 38px;
+	overflow: hidden;
+}
+.banner .short-description .animation-wrapper {
+	display: inline-block;
+	color: #fff;
+	position: relative;
+	white-space: nowrap;
+	top: 0;
+	left: 0;
+	-webkit-animation: move 5s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-delay: 1s;
+	-webkit-animation-direction: initial;
+}
+
+@keyframes move {
+	0% {
+		top: 0px;
+	}
+	20% {
+		top: -50px;
+	}
+	40% {
+		top: -100px;
+	}
 }
 .banner .short-description .word-bold {
 	font-weight: bold;

@@ -2,7 +2,7 @@
 	min-height: 100vh;
 	background-color: #bee3db;
 	padding-top: 7rem;
-	/* padding-bottom: 7rem; */
+	padding-bottom: 3rem;
 }
 .envinitiative .image_wrapper {
 	display: grid;
@@ -59,7 +59,7 @@
 	/* padding-right: 10rem; */
 }
 .envinitiative .handbook .title_brief.rgb_mission {
-	padding-right: 10rem;
+	padding-right: 7rem;
 }
 .envinitiative .handbook .handbook_image.rgb_mission {
 	width: 75%;

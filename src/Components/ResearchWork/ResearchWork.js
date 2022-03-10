@@ -22,10 +22,12 @@ export default function ResearchWork() {
 				<h2 className='Head_title'>Research Works</h2>
 				<div className='d-flex flex-wrap'>
 					<div className='col-12 col-md-6 detail_cards'>
-						<ResearchDetailsCarousel
-							data={Data}
-							setPage={setPage}
-						/>
+						<div style={{ cursor: "grab" }}>
+							<ResearchDetailsCarousel
+								data={Data}
+								setPage={setPage}
+							/>
+						</div>
 						<div className='my-4'>
 							<span
 								className='research-prev-btn'
@@ -50,7 +52,9 @@ export default function ResearchWork() {
 							</span>
 						</div>
 					</div>
-					<div className='col-12 col-md-6 imagecarousel'>
+					<div
+						className='col-12 col-md-6 imagecarousel'
+						style={{ cursor: "grab" }}>
 						<ResearchImageCarousel data={Data} setPage={setPage} />
 					</div>
 				</div>

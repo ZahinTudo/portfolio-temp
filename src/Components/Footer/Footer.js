@@ -10,12 +10,23 @@ export default function Footer() {
 						<h3 className='title'>Resume</h3>
 					</div>
 					<div className='col-12 col-md-6 text-md-end ps-2 '>
-						<span className='btn btn-dark px-5 py-2 me-3'>
-							View
-						</span>
-						<span className='btn btn-outline-dark px-5 py-2'>
-							Download
-						</span>
+						<a
+							href='/assets/resume.pdf'
+							target='_blank'
+							rel='noopener noreferrer'>
+							<span className='btn btn-dark px-5 py-2 me-3'>
+								View
+							</span>
+						</a>
+						<a
+							href='/assets/resume.pdf'
+							target='_blank'
+							rel='noopener noreferrer'
+							download>
+							<span className='btn btn-outline-dark px-5 py-2'>
+								Download
+							</span>
+						</a>
 					</div>
 				</div>
 			</div>

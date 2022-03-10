@@ -1,5 +1,7 @@
 .publications {
 	background-color: #f3d8c7;
+	padding-top: 7rem;
+	padding-bottom: 3rem;
 }
 .publications .Head_title {
 	font-family: Poppins;
@@ -16,6 +18,7 @@
 	font-size: 1.125rem;
 	line-height: 160%;
 	color: #0b132b;
+	margin-bottom: 3rem;
 }
 .publications .page {
 	font-family: Poppins;
