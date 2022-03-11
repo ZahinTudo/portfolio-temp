@@ -2,7 +2,7 @@ import React from "react";
 import "./DetailsCard.css";
 
 export default function ({ item }) {
-	console.log(item);
+	// console.log(item);
 	const { title, topic, brief, link } = item;
 
 	return (

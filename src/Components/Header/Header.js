@@ -1,22 +1,34 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
+import ReactDOM from "react-dom";
 import "./Header.css";
 import useWindowResize from "../../customHooks/useWindowResize";
 export default function Header() {
+	const hoverbtn = useRef();
+	const [hover, setHover] = useState(null);
 	const { width } = useWindowResize();
 	// alert(width <= 600);
 	const [clicked, setClicked] = useState(false);
 	const [timeout, settimeout] = useState(null);
+	useEffect(() => {
+		setHover(hoverbtn.current);
+	}, [hoverbtn]);
+
 	let time = null;
+	// console.log(hover);
+	// console.log(document.getElementsByClassName("hoverBtn")[0]);
+
 	const clickHandle = (e) => {
-		// clearTimeout(timeout);
-		// clearTimeout(time);
-		// if (width <= 600) setClicked(!clicked);
-		// else {
-		// 	time = setTimeout(() => {
-		// 		setClicked(!clicked);
-		// 	}, 4000);
-		// 	settimeout(time);
-		// }
+		if (width > 600 && hover) {
+			hover.addEventListener("mouseleave", () => {
+				clearTimeout(timeout);
+				clearTimeout(time);
+
+				time = setTimeout(() => {
+					setClicked(!clicked);
+				}, 4000);
+				settimeout(time);
+			});
+		}
 	};
 	const hoverHandle = (e) => {
 		setClicked(!clicked);
@@ -32,11 +44,11 @@ export default function Header() {
 		<div
 			className=' header d-flex justify-content-end position-sticky'
 			style={{ zIndex: "500" }}>
-			<span
+			<div
+				ref={hoverbtn}
 				onClick={hoverHandle}
 				onMouseLeave={clickHandle}
 				onMouseOver={() => {
-					if (width <= 600) return;
 					clearTimeout(timeout);
 				}}
 				className='hoverBtn   '>
@@ -105,7 +117,7 @@ export default function Header() {
 						</a>
 					</div>
 				</span>
-			</span>
+			</div>
 		</div>
 	);
 }
