@@ -12,8 +12,10 @@ import EnvironmentInitiative from "./Components/EnvironmentInitiative/Environmen
 import ResearchWork from "./Components/ResearchWork/ResearchWork";
 import Publications from "./Components/Publications/Publications";
 import AboutMe from "./Components/AboutMe/AboutMe";
+import UseScrolleffect from "./customHooks/UseScrolleffect";
 
 function App() {
+	UseScrolleffect();
 	return (
 		<>
 			<Header />

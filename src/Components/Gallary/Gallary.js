@@ -8,7 +8,7 @@ export default function Gallary() {
 			.then((result) => setData(result));
 	}, []);
 	return (
-		<section id='gallary' className='gallary '>
+		<section id='gallary' className='gallary fadeEntry'>
 			<div className='custom_container'>
 				<h3 className='title my-4'>World through my lens</h3>
 				{/* <p className='sub-title'>
@@ -28,6 +28,7 @@ export default function Gallary() {
 									Instagram{" "}
 									<span>
 										<img
+											style={{ width: "1rem" }}
 											src='/assets/linkArrow.png'
 											alt=''
 											className='img-fluid'

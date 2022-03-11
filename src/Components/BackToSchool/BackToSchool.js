@@ -14,7 +14,7 @@ export default function BackToSchool() {
 	return (
 		<section
 			id='backToSchool'
-			className='backToSchool  d-flex flex-wrap flex-column justify-content-center align-items-center'>
+			className='backToSchool fadeEntry  d-flex flex-wrap flex-column justify-content-center align-items-center'>
 			<div className='custom_container'>
 				<div className='d-flex flex-wrap justify-content-between align-items-center'>
 					<div className='col-12 col-md-6'>
@@ -99,23 +99,27 @@ export default function BackToSchool() {
 								get playground
 							</p>
 							<div>
-								{data.map((item, ind) => (
-									<span
-										key={ind}
-										className='p-3 ps-0 d-inline-block'
-										style={{ width: "25%" }}>
-										<a
-											href={item.website}
-											target='_blank'
-											rel='noopener noreferrer'>
-											<img
-												src={item.media_image}
-												alt=''
-												className='img-fluid'
-											/>
-										</a>
-									</span>
-								))}
+								{data.map((item, ind) =>
+									item.media_image != "" ? (
+										<span
+											key={ind}
+											className='p-3 ps-0 d-inline-block'
+											style={{ width: "25%" }}>
+											<a
+												href={item.website}
+												target='_blank'
+												rel='noopener noreferrer'>
+												<img
+													src={item.media_image}
+													alt=''
+													className='img-fluid'
+												/>
+											</a>
+										</span>
+									) : (
+										<span></span>
+									)
+								)}
 							</div>
 						</div>
 					</div>

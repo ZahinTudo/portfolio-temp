@@ -1,6 +1,6 @@
 [
     {
-        "media_image":"/assets/BackToSchool/logo1.png",
+        "media_image":"",
         "website": "" ,
         "image":"/assets/BackToSchool/media1.png"
     },
@@ -15,24 +15,24 @@
         "image":"/assets/BackToSchool/media3.png"
     },
     {
-        "media_image":"/assets/BackToSchool/logo4.png",
+        "media_image":"",
         "website": "",
-        "image":"/assets/BackToSchool/media3.png"
+        "image":"/assets/BackToSchool/media4.png"
     }
     ,
     {
         "media_image":"/assets/BackToSchool/logo7.png",
         "website": "https://www.pehalnews.in/",
-        "image":"/assets/BackToSchool/media3.png"
+        "image":"/assets/BackToSchool/media5.png"
     },
     {
         "media_image":"/assets/BackToSchool/logo5.png",
         "website": "https://thetimesbureau.com/",
-        "image":"/assets/BackToSchool/media3.png"
+        "image":"/assets/BackToSchool/media6.png"
     },
     {
         "media_image":"/assets/BackToSchool/logo6.png",
         "website": "https://www.abplive.com/",
-        "image":"/assets/BackToSchool/media3.png"
+        "image":"/assets/BackToSchool/media7.png"
     }
 ]

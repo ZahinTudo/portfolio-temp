@@ -27,6 +27,9 @@
 	line-height: 160%;
 	color: #0b132b;
 }
+.aboutme .image {
+	width: 75%;
+}
 .aboutme .socials {
 	width: 75%;
 }
@@ -41,6 +44,9 @@
 }
 @media (max-width: 600px) {
 	.aboutme .socials {
+		width: 100%;
+	}
+	.aboutme .image {
 		width: 100%;
 	}
 }

@@ -13,11 +13,11 @@ export default function Banner() {
 					/>
 				</div>
 			</div>
-			<div className='col-12 col-md-7 px-3 d-flex justify-content-center'>
+			<div className='col-12 col-md-7 px-md-3 d-flex justify-content-md-center'>
 				<div>
 					<h3 className='name my-0'>Inaayat Passi</h3>
 					<p className='short-description mt-3'>
-						<p className="animation-wrapper">
+						<p className='animation-wrapper'>
 							<p style={{ color: "#BEE3DB" }}>
 								Young Environmentalist
 							</p>

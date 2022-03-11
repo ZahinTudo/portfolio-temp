@@ -14,7 +14,7 @@ import { Navigation } from "swiper";
 import DetailsCard from "./DetailsCard";
 
 export default function ResearchDetailsCarousel({ data ,setPage}) {
-	console.log("items", data);
+	// console.log("items", data);
 	return (
 		<>
 			<Swiper

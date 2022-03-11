@@ -2,7 +2,7 @@
 	background: #f3d8c7;
 	min-height: 100vh;
 	overflow: hidden;
-	padding: 8rem 0 3rem 0;
+	padding: 7rem 0 3rem 0;
 }
 .backToSchool .title {
 	font-family: Poppins;
@@ -52,6 +52,7 @@
 	display: grid;
 	grid-auto-flow: column;
 	grid-template-columns: auto;
+	grid-gap: 1rem;
 	/* cursor: grab; */
 }
 .media_image_wrapper:hover {

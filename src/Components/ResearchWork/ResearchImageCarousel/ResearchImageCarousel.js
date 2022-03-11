@@ -24,7 +24,7 @@ export default function App({ data, setPage }) {
 					nextEl: ".research-next-btn",
 					prevEl: ".research-prev-btn",
 				}}
-				className='researchWork'>
+				className='researchWorks'>
 				{data.map((item, ind) => (  
 					<SwiperSlide key={ind}>
 						<img src={item.image} alt='' srcset='' />{" "}

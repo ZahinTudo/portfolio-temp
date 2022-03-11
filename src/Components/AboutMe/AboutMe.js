@@ -16,7 +16,7 @@ export default function AboutMe() {
 			});
 	}, []);
 	return (
-		<div id='aboutme' className='aboutme '>
+		<div id='aboutme' className='aboutme fadeEntry'>
 			<div className='custom_container d-flex flex-wrap'>
 				<div className='col-12 col-md-6'>
 					<h1 className='title'>About Me</h1>
@@ -51,7 +51,7 @@ export default function AboutMe() {
 						<a
 							target='_blank'
 							rel='noreferrer'
-							href='https://www.instagram.com/thebigpicture05/'>
+							href='mailto:passiinaayat@gmail.com'>
 							<span className='me-3'>Email</span>
 							<span>
 								<img
@@ -65,7 +65,7 @@ export default function AboutMe() {
 						<a
 							target='_blank'
 							rel='noreferrer'
-							href='https://www.instagram.com/thebigpicture05/'>
+							href='/assets/resume.pdf'>
 							<span className='me-3'>Resume</span>
 							<span>
 								<img
@@ -80,7 +80,7 @@ export default function AboutMe() {
 				</div>
 				<div className='col-12 col-md-6'>
 					<div className='d-flex justify-content-end align-items-center '>
-						<div className='w-75'>
+						<div className='image'>
 							<img
 								src='/assets/aboutme.png'
 								alt=''

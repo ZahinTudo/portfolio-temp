@@ -17,7 +17,7 @@ export default function ResearchWork() {
 	}, []);
 
 	return (
-		<section id='researchWork' className='researchWork py-5'>
+		<section id='researchWork' className='researchWork fadeEntry'>
 			<div className='custom_container_left'>
 				<h2 className='Head_title'>Research Works</h2>
 				<div className='d-flex flex-wrap'>

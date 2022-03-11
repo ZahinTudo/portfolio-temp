@@ -17,7 +17,7 @@ export default function Publications() {
 	}, []);
 
 	return (
-		<section id='publications' className='publications '>
+		<section id='publications' className='publications fadeEntry'>
 			<div className='custom_container_left'>
 				<h2 className='Head_title'>Essays & Publications</h2>
 				<p className='short_brief'>

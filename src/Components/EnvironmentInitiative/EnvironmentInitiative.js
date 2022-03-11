@@ -2,7 +2,7 @@ import React from "react";
 import "./EnvironmentInitiative.css";
 export default function EnvironmentInitiative() {
 	return (
-		<section id='envinitiative' className='envinitiative'>
+		<section id='envinitiative' className='envinitiative fadeEntry'>
 			<div className='custom_container'>
 				<div className='d-flex flex-wrap'>
 					<div className='col-12'>
@@ -167,7 +167,7 @@ export default function EnvironmentInitiative() {
 						</p>
 						<div className='my-5 '>
 							<a
-								href='https://drive.google.com/file/d/1afCY32SXA9o1XIjfRZMy5Kj4rjjAEt-s/view?usp=sharing'
+								href='https://www.missionrgb.com/resources'
 								style={{ textDecoration: "none" }}
 								target='_blank'
 								className='d-inline-flex align-items-center'

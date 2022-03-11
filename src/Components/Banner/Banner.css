@@ -32,7 +32,7 @@
 	-webkit-animation: move 5s;
 	-webkit-animation-iteration-count: infinite;
 	-webkit-animation-delay: 1s;
-	-webkit-animation-direction: initial;
+	opacity: 1;
 }
 
 @keyframes move {
@@ -44,6 +44,13 @@
 	}
 	40% {
 		top: -100px;
+	}
+	60% {
+		top: -150px;
+	}
+
+	90% {
+		top: 0;
 	}
 }
 .banner .short-description .word-bold {
