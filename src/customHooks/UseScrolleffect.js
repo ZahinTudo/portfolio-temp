@@ -20,6 +20,8 @@ export default function UseScrolleffect() {
 			if (check == 1) autoScrollHori.scrollTo(left + 1, 0);
 			else {
 				autoScrollHori.scrollTo(left - 1, 0);
+				// check = 1;
+				// autoScrollHori.scrollLeft = 0;
 			}
 		};
 		let interval = setInterval(scrollInterval, 15);

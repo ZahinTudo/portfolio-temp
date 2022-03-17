@@ -34,9 +34,6 @@ export default function Header() {
 		setClicked(!clicked);
 	};
 	const closeNav = (e) => {
-		// console.log("====================================");
-		// console.log(clicked);
-		// console.log("====================================");
 		setClicked(!clicked);
 	};
 
@@ -69,9 +66,11 @@ export default function Header() {
 					className={`big-menu ${
 						clicked ? "" : "d-none"
 					}  bg-dark  py-4 px-5 `}>
-					{/* <h1 onClick={closeNav} className='close text-white'>
-						close
-					</h1> */}
+					<h1
+						onClick={closeNav}
+						className='close text-white d-flex justify-content-end p-0 m-0'>
+						&times;
+					</h1>
 					<div className='d-flex flex-column flex-md-row align-items-center flex-wrap justify-content-evenly  text-white h-100'>
 						<a
 							onClick={closeNav}

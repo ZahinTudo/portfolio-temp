@@ -17,14 +17,14 @@ export default function InTheMedia() {
 			style={{ overflowX: "hidden" }}>
 			<div className='custom_container'>
 				<h3 className='title'>In the Media</h3>
-				<p className='title_brief pe-5'>
+				{/* <p className='title_brief pe-5'>
 					Earth is the third planet from the Sun and the only
 					astronomical object known to harbor{" "}
 					<br className='d-none d-md-inline-block' /> life. According
 					to radiometric dating estimation and other evidence, Earth
 					formed over 4.5 <br className='d-none d-md-inline-block' />{" "}
 					billion years ago.
-				</p>
+				</p> */}
 			</div>
 			<div className='custom_container_left '>
 				<div style={{}} className='scroll_carousel'>
