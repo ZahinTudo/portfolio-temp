@@ -68,7 +68,8 @@ export default function Header() {
 					}  bg-dark  py-4 px-5 `}>
 					<h1
 						onClick={closeNav}
-						className='close text-white d-flex justify-content-end p-0 m-0'>
+						style={{ cursor: "pointer" }}
+						className='close text-white d-flex d-md-none justify-content-end p-0 m-0'>
 						&times;
 					</h1>
 					<div className='d-flex flex-column flex-md-row align-items-center flex-wrap justify-content-evenly  text-white h-100'>
