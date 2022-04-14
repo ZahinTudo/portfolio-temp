@@ -15,7 +15,7 @@ export default function ({ item }) {
 				target='_blank'
 				rel='noreferrer'
 				className='link  align-items-center d-inline-flex'>
-				<span className='me-2'>View Full Article</span>
+				<span className='me-2'>View Essay</span>
 				<span>
 					<img
 						style={{ width: "16px" }}

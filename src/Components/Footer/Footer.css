@@ -1,5 +1,5 @@
 .footer .footer-resume {
-	background-color: #f3d8c7;
+	background-color: #f3efc7;
 	padding-top: 2rem;
 	padding-bottom: 2rem;
 }
@@ -38,9 +38,7 @@
 		line-height: 5.5rem;
 	}
 	.footer .footer-resume .btn {
-		
-		font-size: 1.3rem;	
+		font-size: 1.3rem;
 		min-width: 10rem !important;
-		
 	}
 }

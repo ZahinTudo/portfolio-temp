@@ -11,7 +11,9 @@ html {
 	font-family: "Poppins", sans-serif;
 	font-size: 1rem;
 }
-
+.home {
+	background: #c8f0fc;
+}
 .custom_container {
 	width: 100%;
 	padding-left: 8rem;

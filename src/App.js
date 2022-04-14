@@ -18,8 +18,10 @@ function App() {
 	UseScrolleffect();
 	return (
 		<>
-			<Header />
-			<Banner />
+			<div className="home">
+				<Header />
+				<Banner />
+			</div>
 			<AboutMe />
 			<BackToSchool />
 			<ResearchWork />

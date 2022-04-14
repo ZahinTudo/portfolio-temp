@@ -16,7 +16,7 @@ export default function BackToSchool() {
 			id='backToSchool'
 			className='backToSchool fadeEntry  d-flex flex-wrap flex-column justify-content-center align-items-center'>
 			<div className='custom_container'>
-				<div className='d-flex flex-wrap justify-content-between align-items-center'>
+				<div className='d-flex flex-wrap justify-content-between align-items-start'>
 					<div className='col-12 col-md-6'>
 						<h3 className='title'>Back to School</h3>
 						<p className='short-description'>
@@ -92,7 +92,7 @@ export default function BackToSchool() {
 								/>
 							</span> */}
 						</div>
-						<div className='mt-5'>
+						{/* <div className='mt-5'>
 							<h3 className='coverage'>News & Media Coverages</h3>
 							<p className='coverage-details'>
 								Delhi: Privileged schoolgirl helps SDMC school
@@ -121,7 +121,7 @@ export default function BackToSchool() {
 									)
 								)}
 							</div>
-						</div>
+						</div> */}
 					</div>
 				</div>
 			</div>
