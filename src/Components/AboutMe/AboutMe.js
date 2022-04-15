@@ -78,14 +78,49 @@ export default function AboutMe() {
 						</a>
 					</div>
 				</div>
-				<div className='col-12 col-md-6'>
-					<div className='d-flex justify-content-end align-items-center '>
-						<div className='image'>
-							<img
-								src='/assets/aboutme.png'
-								alt=''
-								className='img-fluid'
-							/>
+				<div
+					className='col-12 col-md-6 position-relative'
+					style={{ minHeight: "70vh" }}>
+					<div className=' d-flex justify-content-end align-items-center '>
+						<div className='d-sm-none d-block'>
+							<div className='image fadeInImage position-absolute'>
+								<img
+									src='/assets/aboutme.png'
+									alt=''
+									className='img-fluid'
+								/>
+							</div>
+							<div className='image '>
+								<img
+									src='/assets/aboutMe2.jpeg'
+									alt=''
+									className='img-fluid'
+								/>
+							</div>
+						</div>
+						<div className=' d-sm-block d-none'>
+							<div
+								style={{
+									width: "50%",
+									bottom: "0",
+									left: "12%",
+								}}
+								className='image position-absolute'>
+								<img
+									src='/assets/aboutme.png'
+									alt=''
+									className='img-fluid'
+								/>
+							</div>
+							<div
+								style={{ width: "50%", top: "-13%", right: 0 }}
+								className='image position-absolute'>
+								<img
+									src='/assets/aboutMe2.jpeg'
+									alt=''
+									className='img-fluid'
+								/>
+							</div>
 						</div>
 					</div>
 				</div>

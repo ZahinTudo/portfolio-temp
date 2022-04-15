@@ -1,5 +1,5 @@
 .aboutme {
-	background: #bee3db;
+	background: #c8f0fc;
 	padding-top: 9rem;
 	padding-bottom: 3rem;
 }
@@ -41,6 +41,27 @@
 	line-height: 140%;
 	color: #0b132b;
 	text-decoration: none;
+}
+.fadeInImage {
+	animation-name: fadeInImage;
+	animation-direction: alternate;
+	animation-duration: 10s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+@keyframes fadeInImage {
+	0% {
+		opacity: 1;
+	}
+	45% {
+		opacity: 1;
+	}
+	85% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
 }
 @media (max-width: 600px) {
 	.aboutme .socials {

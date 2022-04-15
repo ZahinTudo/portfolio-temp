@@ -18,13 +18,13 @@ export default function Banner() {
 					<h3 className='name my-0'>Inaayat Passi</h3>
 					<p className='short-description mt-3'>
 						<p className='animation-wrapper'>
-							<p style={{ color: "#BEE3DB" }}>
+							<p style={{ color: "#0B132B" }}>
 								Young Environmentalist
 							</p>
-							<p style={{ color: "#848484" }}>
+							<p style={{ color: "#0B132B" }}>
 								Avid Photographer
 							</p>
-							<p style={{ color: "#F3D8C7" }}>
+							<p style={{ color: "#0B132B" }}>
 								Curious Researcher
 							</p>
 						</p>
