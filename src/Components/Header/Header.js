@@ -12,7 +12,7 @@ export default function Header() {
 	useEffect(() => {
 		setHover(hoverbtn.current);
 	}, [hoverbtn]);
-
+	const location = window.location;
 	let time = null;
 	// console.log(hover);
 	// console.log(document.getElementsByClassName("hoverBtn")[0]);
@@ -33,13 +33,15 @@ export default function Header() {
 	const hoverHandle = (e) => {
 		setClicked(!clicked);
 	};
-	const closeNav = (e) => {
+	const closeNav = (id = "") => {
 		setClicked(!clicked);
+		var scrollDiv = document.querySelector(id).offsetTop;
+		window.scrollTo({ top: scrollDiv, behavior: "smooth" });
 	};
 
 	return (
 		<div
-			className=' header d-flex justify-content-end position-sticky'
+			className=' header d-flex justify-content-end position-fixed'
 			style={{ zIndex: "500" }}>
 			<div
 				ref={hoverbtn}
@@ -74,44 +76,45 @@ export default function Header() {
 					</h1>
 					<div className='d-flex flex-column flex-md-row align-items-center flex-wrap justify-content-evenly  text-white h-100'>
 						<a
-							onClick={closeNav}
-							href='#aboutme'
+							// href='#aboutme'
+							onClick={() => closeNav("#aboutme")}
+							rel='noreferrer'
 							className='navlink '>
 							About
 						</a>
 						<a
-							onClick={closeNav}
-							href='#backToSchool'
+							onClick={() => closeNav("#backToSchool")}
+							// href='#backToSchool'
 							className='navlink '>
 							Featured
 						</a>
 						<a
-							onClick={closeNav}
-							href='#researchWork'
+							onClick={() => closeNav("#researchWork")}
+							// href='#researchWork'
 							className='navlink '>
 							Research
 						</a>
 						<a
-							onClick={closeNav}
-							href='#envinitiative'
+							onClick={() => closeNav("#envinitiative")}
+							// href='#envinitiative'
 							className='navlink '>
 							Initiatives
 						</a>
 						<a
-							onClick={closeNav}
-							href='#publications'
+							onClick={() => closeNav("#publications")}
+							// href='#publications'
 							className='navlink '>
 							Publications
 						</a>
 						<a
-							onClick={closeNav}
-							href='#gallary'
+							onClick={() => closeNav("#gallary")}
+							// href='#gallary'
 							className='navlink '>
 							Photography
 						</a>
 						<a
-							onClick={closeNav}
-							href='#media'
+							onClick={() => closeNav("#media")}
+							// href='#media'
 							className='navlink '>
 							Media
 						</a>

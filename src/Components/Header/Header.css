@@ -1,6 +1,10 @@
 .header {
 	top: 0;
 	right: 0;
+	/* background: #c8f0fc; */
+}
+.header a {
+	cursor: pointer;
 }
 .header .btn,
 .navlink {
@@ -36,5 +40,8 @@
 		width: 100vw;
 		height: 100vh;
 		border-bottom-left-radius: 0rem;
+	}
+	.header {
+		background: #c8f0fc00;
 	}
 }
