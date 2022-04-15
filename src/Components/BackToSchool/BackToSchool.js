@@ -17,8 +17,8 @@ export default function BackToSchool() {
 			className='backToSchool fadeEntry  d-flex flex-wrap flex-column justify-content-center align-items-center'>
 			<div className='custom_container'>
 				<div className='d-flex flex-wrap justify-content-between align-items-center'>
+					<h3 className='title mb-0 w-100'>Back to School</h3>
 					<div className='col-12 col-md-6'>
-						<h3 className='title mb-0'>Back to School</h3>
 						<h4 className='my-3 subtitle'>@ Pratibha Vidyalaya</h4>
 						<p className='short-description'>
 							<p>
