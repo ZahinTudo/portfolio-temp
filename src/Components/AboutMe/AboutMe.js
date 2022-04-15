@@ -90,9 +90,9 @@ export default function AboutMe() {
 									className='img-fluid'
 								/>
 							</div>
-							<div className='image '>
+							<div className='image fadeInImage2'>
 								<img
-									src='/assets/aboutMe2.jpeg'
+									src='/assets/aboutme2.png'
 									alt=''
 									className='img-fluid'
 								/>
@@ -103,7 +103,7 @@ export default function AboutMe() {
 								style={{
 									width: "50%",
 									bottom: "0",
-									left: "12%",
+									left: "14%",
 								}}
 								className='image position-absolute'>
 								<img
@@ -113,10 +113,10 @@ export default function AboutMe() {
 								/>
 							</div>
 							<div
-								style={{ width: "50%", top: "-13%", right: 0 }}
+								style={{ width: "50%", top: "-5%", right: 0 }}
 								className='image position-absolute'>
 								<img
-									src='/assets/aboutMe2.jpeg'
+									src='/assets/aboutme2.png'
 									alt=''
 									className='img-fluid'
 								/>

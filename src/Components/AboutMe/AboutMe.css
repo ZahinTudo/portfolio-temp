@@ -49,11 +49,18 @@
 	animation-timing-function: ease-in-out;
 	animation-iteration-count: infinite;
 }
+.fadeInImage2 {
+	animation-name: fadeInImage2;
+	animation-direction: alternate;
+	animation-duration: 10s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
 @keyframes fadeInImage {
 	0% {
 		opacity: 1;
 	}
-	45% {
+	80% {
 		opacity: 1;
 	}
 	85% {
@@ -61,6 +68,20 @@
 	}
 	100% {
 		opacity: 0;
+	}
+}
+@keyframes fadeInImage2 {
+	0% {
+		opacity: 0;
+	}
+	45% {
+		opacity: 0;
+	}
+	80% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 1;
 	}
 }
 @media (max-width: 600px) {
