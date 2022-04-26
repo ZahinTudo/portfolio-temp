@@ -18,11 +18,7 @@ export default function Footer() {
 								View
 							</span>
 						</a>
-						<a
-							href='/assets/resume.pdf'
-							target='_blank'
-							rel='noopener noreferrer'
-							download>
+						<a href='/assets/resume.pdf' download>
 							<span className='btn btn-outline-dark px-5 py-2'>
 								Download
 							</span>

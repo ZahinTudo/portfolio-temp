@@ -36,10 +36,17 @@
         "link":"https://www.etvbharat.com/english/national/bharat/bharat-news/living-through-history-a-teens-perspective-on-life-under-lockdown/na20200520113311749"
 	},
 	{
-		"title": "John Locke Essay Competition (2021)",
-        "topic":"New College of the Humanities Essay Competition ",
+		"title": "Do we need Greta?",
+        "topic":"John Locke Essay Competition (2021)",
 		"image": "/assets/publications/JohnLockeEssay.png",
         "brief":"In response to the question, “Do we need Greta?” I argued that we do need Greta Thunberg because she stands as a symbol of change, built on logical, scientific, and moral premises. Greta is the reason that a generation believes their voices and their concerns matter. She is the face of a movement, and the face of a generation. We need Greta to spur an environmental revolution, to spark hope, and to lead other young people to the belief that they, too, can make a profound difference in changing our world.",
+        "link":"/assets/John.pdf"
+	},
+	{
+		"title": "Humanities Essay Competition",
+        "topic":"New College of the Humanities Essay Competition (2021)",
+		"image": "/assets/publications/JohnLockeEssay.png",
+        "brief":"In response to the question “Has the COVID-19 pandemic impacted inequalities?” I discussed the role of the social economy and its participants in the inequalities exacerbated by the COVID-19 pandemic, as well as how policy instruments and social economy players can alleviate these inequalities.",
         "link":"/assets/John.pdf"
 	}
 	
