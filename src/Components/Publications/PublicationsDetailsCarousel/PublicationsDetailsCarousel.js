@@ -13,13 +13,22 @@ import "swiper/modules/navigation/navigation.min.css";
 import { Navigation } from "swiper";
 import DetailsCard from "./DetailsCard";
 
-export default function PublicationsDetailsCarousel({ data, setPage }) {
+export default function PublicationsDetailsCarousel({
+	data,
+	setPage,
+	slideto,
+}) {
 	// console.log("items", data);
+	const [swiper, setSwiper] = useState(null);
+	if (swiper) swiper.slideToLoop(slideto);
 	return (
 		<>
 			<Swiper
+				onSwiper={setSwiper}
 				modules={[Navigation]}
-				onSlideChange={(swiper) => setPage(swiper.realIndex + 1)}
+				onSlideChange={(swiper) => {
+					setPage(swiper.realIndex + 1);
+				}}
 				navigation={{
 					nextEl: ".publications-next-btn",
 					prevEl: ".publications-prev-btn",

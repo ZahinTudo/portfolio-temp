@@ -7,6 +7,7 @@ export default function ResearchWork() {
 	const [Data, setData] = useState([]);
 	const [page, setPage] = useState(1);
 	const [TotalPage, setTotalPage] = useState(Data.length);
+	const [slideto, setSlideto] = useState(0);
 	useEffect(() => {
 		fetch("/researchWork.json")
 			.then((res) => res.json())
@@ -26,6 +27,8 @@ export default function ResearchWork() {
 							<ResearchDetailsCarousel
 								data={Data}
 								setPage={setPage}
+								slideto={slideto}
+								setslide={setSlideto}
 							/>
 						</div>
 						<div className='my-4'>
@@ -55,7 +58,12 @@ export default function ResearchWork() {
 					<div
 						className='col-12 col-md-6 imagecarousel'
 						style={{ cursor: "grab" }}>
-						<ResearchImageCarousel data={Data} setPage={setPage} />
+						<ResearchImageCarousel
+							data={Data}
+							setPage={setPage}
+							slideto={slideto}
+							setslide={setSlideto}
+						/>
 					</div>
 				</div>
 			</div>

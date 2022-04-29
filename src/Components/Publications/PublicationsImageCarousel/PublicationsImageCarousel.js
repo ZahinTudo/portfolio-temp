@@ -11,7 +11,14 @@ import "swiper/modules/navigation/navigation.min.css";
 // import required modules
 import { Navigation } from "swiper";
 
-export default function PublicationsImageCarousel({ data, setPage }) {
+export default function PublicationsImageCarousel({
+	data,
+	setPage,
+	slideto,
+	setslide,
+}) {
+	const [swiper, setSwiper] = useState(null);
+
 	return (
 		<>
 			<Swiper
@@ -19,7 +26,11 @@ export default function PublicationsImageCarousel({ data, setPage }) {
 				centeredSlides={true}
 				spaceBetween={10}
 				modules={[Navigation]}
-				onSlideChange={(swiper) => setPage(swiper.realIndex + 1)}
+				// allowSlideNext={false}
+				onSlideChange={(swiper) => {
+					setPage(swiper.realIndex + 1);
+					setslide(swiper.realIndex);
+				}}
 				navigation={{
 					nextEl: ".publications-next-btn",
 					prevEl: ".publications-prev-btn",
@@ -30,7 +41,6 @@ export default function PublicationsImageCarousel({ data, setPage }) {
 						<img src={item.image} alt='' srcset='' />{" "}
 					</SwiperSlide>
 				))}
-				
 			</Swiper>
 		</>
 	);

@@ -11,7 +11,7 @@ import "swiper/modules/navigation/navigation.min.css";
 // import required modules
 import { Navigation } from "swiper";
 
-export default function App({ data, setPage }) {
+export default function App({ data, setPage, slideto, setslide }) {
 	return (
 		<>
 			<Swiper
@@ -19,13 +19,16 @@ export default function App({ data, setPage }) {
 				centeredSlides={true}
 				spaceBetween={10}
 				modules={[Navigation]}
-				onSlideChange={(swiper) => setPage(swiper.realIndex + 1)}
+				onSlideChange={(swiper) => {
+					setPage(swiper.realIndex + 1);
+					setslide(swiper.realIndex);
+				}}
 				navigation={{
 					nextEl: ".research-next-btn",
 					prevEl: ".research-prev-btn",
 				}}
 				className='researchWorks'>
-				{data.map((item, ind) => (  
+				{data.map((item, ind) => (
 					<SwiperSlide key={ind}>
 						<img src={item.image} alt='' srcset='' />{" "}
 					</SwiperSlide>

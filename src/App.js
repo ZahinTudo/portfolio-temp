@@ -25,8 +25,8 @@ function App() {
 			<Banner />
 			<AboutMe />
 			<BackToSchool />
-			<ResearchWork />
 			<EnvironmentInitiative />
+			<ResearchWork />
 			<Publications />
 			<Gallary />
 			<InTheMedia />

@@ -51,9 +51,9 @@ export default function EnvironmentInitiative() {
 					<div className='col-12 col-md-5'>
 						<h3 className='title'>
 							The Green Handbook{" "}
-							<span className='writer ms-2'>
+							{/* <span className='writer ms-2'>
 								by Inaayat Passi
-							</span>
+							</span> */}
 						</h3>
 
 						<p className='title_brief' style={{}}>

@@ -7,6 +7,7 @@ export default function Publications() {
 	const [Data, setData] = useState([]);
 	const [page, setPage] = useState(1);
 	const [TotalPage, setTotalPage] = useState(Data.length);
+	const [slideto, setSlideto] = useState(0);
 	useEffect(() => {
 		fetch("/publications.json")
 			.then((res) => res.json())
@@ -15,7 +16,7 @@ export default function Publications() {
 				setTotalPage(result.length);
 			});
 	}, []);
-
+	console.log(slideto);
 	return (
 		<section id='publications' className='publications fadeEntry'>
 			<div className='custom_container_left'>
@@ -31,6 +32,8 @@ export default function Publications() {
 							<PublicationsDetailsCarousel
 								data={Data}
 								setPage={setPage}
+								slideto={slideto}
+								setslide={setSlideto}
 							/>
 						</div>
 						<div className='my-4'>
@@ -62,6 +65,8 @@ export default function Publications() {
 							<PublicationsImageCarousel
 								data={Data}
 								setPage={setPage}
+								slideto={slideto}
+								setslide={setSlideto}
 							/>
 						</div>
 					</div>

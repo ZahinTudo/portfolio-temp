@@ -26,7 +26,9 @@ export default function Footer() {
 					</div>
 				</div>
 			</div>
-			<div className='custom_container_left copyright'>
+			<div
+				className='custom_container_left copyright'
+				style={{ background: "#FAF9F9" }}>
 				2022 Copyright - Inaayat Passi. All rights reserved.
 			</div>
 		</div>

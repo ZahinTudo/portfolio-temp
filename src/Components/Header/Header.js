@@ -25,7 +25,7 @@ export default function Header() {
 
 				time = setTimeout(() => {
 					setClicked(!clicked);
-				}, 4000);
+				}, 3000);
 				settimeout(time);
 			});
 		}

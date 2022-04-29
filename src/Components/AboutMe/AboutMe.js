@@ -41,7 +41,7 @@ export default function AboutMe() {
 							<span className='me-3'>Instagram</span>
 							<span>
 								<img
-									style={{ width: "12px" }}
+									style={{ width: "15px" }}
 									src='/assets/blackLinkArrow.png'
 									alt=''
 									className='img-fluid'
@@ -55,7 +55,7 @@ export default function AboutMe() {
 							<span className='me-3'>Email</span>
 							<span>
 								<img
-									style={{ width: "12px" }}
+									style={{ width: "15px" }}
 									src='/assets/blackLinkArrow.png'
 									alt=''
 									className='img-fluid'
@@ -69,7 +69,7 @@ export default function AboutMe() {
 							<span className='me-3'>Resume</span>
 							<span>
 								<img
-									style={{ width: "12px" }}
+									style={{ width: "15px" }}
 									src='/assets/blackLinkArrow.png'
 									alt=''
 									className='img-fluid'
