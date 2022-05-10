@@ -1,15 +1,15 @@
 import React from "react";
 import { Modal } from "react-bootstrap";
-
+import "./Modal.css";
 export default function ModalUrl(props) {
 	// const [show, setShow] = useState(false);
 
 	// const handleClose = () => setShow(false);
 	// const handleShow = () => setShow(true);
 	const url = props.url;
-	if (url.includes("drive.google")) {
-		url += "?pid=explorer&efh=false&a=v&chrome=false&embedded=true";
-	}
+	// if (url.includes("drive.google")) {
+	// 	url += "?pid=explorer&efh=false&a=v&chrome=false&embedded=true";
+	// }
 	return (
 		<Modal
 			fullscreen={true}

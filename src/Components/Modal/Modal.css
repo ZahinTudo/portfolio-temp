@@ -1,0 +1,9 @@
+.modal-fullscreen {
+	width: 90vw !important;
+	height: 90% !important;
+}
+.modal {
+	display: flex !important;
+	align-items: center;
+	justify-content: center;
+}

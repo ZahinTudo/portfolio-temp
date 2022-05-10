@@ -134,54 +134,72 @@ export default function EnvironmentInitiative() {
 						</div>
 					</div>
 					<div className='col-12 col-md-6'>
-						<h3 className='title mt-5 mt-md-0'>Mission RGB</h3>
+						<div>
+							<h3 className='title mt-5 mt-md-0'>Mission RGB</h3>
 
-						<p
-							className='title_brief rgb_mission'
-							style={{
-								textAlign: "justify",
-							}}>
-							<p>
-								Mission RGB is a youth-led movement that began
-								with a simple colour scheme: Red, Green, Blue.
-								These three colours form the basis of a
-								recycling management system: red for hazardous
-								waste, green for compost and blue for
-								recyclables. Mission RGB is a holistic
-								initiative that seeks to entirely transform the
-								way people think about waste management, thus
-								significantly reducing their contribution to the
-								waste problem in Delhi.
+							<p
+								className='title_brief rgb_mission'
+								style={{
+									textAlign: "justify",
+								}}>
+								<p>
+									Mission RGB is a youth-led movement that
+									began with a simple colour scheme: Red,
+									Green, Blue. These three colours form the
+									basis of a recycling management system: red
+									for hazardous waste, green for compost and
+									blue for recyclables. Mission RGB is a
+									holistic initiative that seeks to entirely
+									transform the way people think about waste
+									management, thus significantly reducing
+									their contribution to the waste problem in
+									Delhi.
+								</p>
+								<p>
+									Through door-to-door awareness and pledge
+									drives, we managed to convince over 80% of
+									households in Sunder Nagar to begin waste
+									segregation and home composting. We are
+									currently in the process of setting up a
+									collective community composting system, as
+									well as having talks with Residents Welfare
+									Association of Nizamuddin to expand Mission
+									RGB operations to their neighbourhood too.
+								</p>
 							</p>
-							<p>
-								Through door-to-door awareness and pledge
-								drives, we managed to convince over 80% of
-								households in Sunder Nagar to begin waste
-								segregation and home composting. We are
-								currently in the process of setting up a
-								collective community composting system, as well
-								as having talks with Residents Welfare
-								Association of Nizamuddin to expand Mission RGB
-								operations to their neighbourhood too.
-							</p>
-						</p>
-						<div className='my-5 '>
-							<a
-								href='https://www.missionrgb.com/resources'
-								style={{ textDecoration: "none" }}
-								target='_blank'
-								className='d-inline-flex align-items-center'
-								rel='noopener noreferrer'>
-								<span className='me-2 viewPdf'>View PDF</span>
-								<span>
-									<img
-										style={{ width: "16px" }}
-										src='/assets/blackLinkArrow.png'
-										alt=''
-										className='img-fluid'
-									/>
-								</span>
-							</a>
+							<div className='my-5 '>
+								<a
+									href='https://www.missionrgb.com/resources'
+									style={{ textDecoration: "none" }}
+									target='_blank'
+									className='d-inline-flex align-items-center'
+									rel='noopener noreferrer'>
+									<span className='me-2 viewPdf'>
+										View PDF
+									</span>
+									<span>
+										<img
+											style={{ width: "16px" }}
+											src='/assets/blackLinkArrow.png'
+											alt=''
+											className='img-fluid'
+										/>
+									</span>
+								</a>
+							</div>
+						</div>
+						<div>
+							<div className='position-relative d-flex justify-content-center'>
+								<video
+									width='70%'
+									// height='200'
+									poster='/assets/envinitiative/rgb.png'
+									controls>
+									<source
+										src='/assets/envinitiative/rgb.mp4'
+										type='video/mp4'></source>
+								</video>
+							</div>
 						</div>
 					</div>
 				</div>
