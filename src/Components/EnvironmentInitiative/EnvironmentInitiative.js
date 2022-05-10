@@ -1,8 +1,18 @@
 import React from "react";
+import ModalUrl from "../Modal/ModalUrl";
 import "./EnvironmentInitiative.css";
 export default function EnvironmentInitiative() {
+	const [modalShow, setModalShow] = React.useState(false);
+	const [url, setUrl] = React.useState("");
+	const [title, setTitle] = React.useState("");
 	return (
 		<section id='envinitiative' className='envinitiative fadeEntry'>
+			<ModalUrl
+				show={modalShow}
+				onHide={() => setModalShow(false)}
+				url={url}
+				title={title}
+			/>
 			<div className='custom_container'>
 				<div className='d-flex flex-wrap'>
 					<div className='col-12'>
@@ -94,10 +104,21 @@ export default function EnvironmentInitiative() {
 						</p>
 						<div className='mt-5 d-flex align-items-center'>
 							<a
+								onClick={() => {
+									setTitle("The Green Handbook");
+									setModalShow(true);
+									setUrl(
+										"/assets/envinitiative/Inaayat – The “Green Hand-book” -.pdf"
+									);
+									// setTitle(title);
+								}}
 								className='d-inline-flex align-items-center'
-								style={{ textDecoration: "none" }}
-								href='https://drive.google.com/file/d/1afCY32SXA9o1XIjfRZMy5Kj4rjjAEt-s/view?usp=sharing'
-								target='_blank'
+								style={{
+									textDecoration: "none",
+									cursor: "pointer",
+								}}
+								// href='https://drive.google.com/file/d/1afCY32SXA9o1XIjfRZMy5Kj4rjjAEt-s/view?usp=sharing'
+								// target='_blank'
 								rel='noopener noreferrer'>
 								<span className='me-2 viewPdf'>View PDF</span>
 								<span>
@@ -169,8 +190,19 @@ export default function EnvironmentInitiative() {
 							</p>
 							<div className='my-5 '>
 								<a
-									href='https://www.missionrgb.com/resources'
-									style={{ textDecoration: "none" }}
+									onClick={() => {
+										setTitle("Mission RGB");
+										setModalShow(true);
+										setUrl(
+											"https://www.missionrgb.com/resources"
+										);
+										// setTitle(title);
+									}}
+									// href='https://www.missionrgb.com/resources'
+									style={{
+										textDecoration: "none",
+										cursor: "pointer",
+									}}
 									target='_blank'
 									className='d-inline-flex align-items-center'
 									rel='noopener noreferrer'>
