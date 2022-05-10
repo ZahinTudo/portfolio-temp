@@ -74,7 +74,11 @@ export default function Header() {
 						className='close text-white d-flex d-md-none justify-content-end p-0 m-0'>
 						&times;
 					</h1>
-					<div className='d-flex flex-column flex-md-row align-items-center flex-wrap justify-content-evenly  text-white h-100'>
+					<div
+						className='d-flex flex-column flex-md-row align-items-center flex-wrap justify-content-evenly  text-white h-100'
+						onMouseOver={() => {
+							clearTimeout(timeout);
+						}}>
 						<a
 							// href='#aboutme'
 							onClick={() => closeNav("#aboutme")}
