@@ -1,15 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 import { Modal } from "react-bootstrap";
 import "./Modal.css";
+import { Document, Page } from "react-pdf/dist/esm/entry.webpack";
+import DocViewer, { DocViewerRenderers } from "react-doc-viewer";
+import FileViewer from "react-file-viewer";
+// import { CustomErrorComponent } from "custom-error";
+
 export default function ModalUrl(props) {
 	// const [show, setShow] = useState(false);
+	const [numPages, setNumPages] = useState(null);
+	const [pageNumber, setPageNumber] = useState(1);
 
-	// const handleClose = () => setShow(false);
-	// const handleShow = () => setShow(true);
 	const url = props.url;
-	// if (url.includes("drive.google")) {
-	// 	url += "?pid=explorer&efh=false&a=v&chrome=false&embedded=true";
-	// }
+
+	function onDocumentLoadSuccess({ numPages }) {
+		// alert("asfd");
+		setNumPages(numPages);
+		setPageNumber(1);
+	}
+	const docs = [
+		{ uri: url }, // Local File
+	];
 	return (
 		<Modal
 			fullscreen={true}
@@ -21,13 +32,33 @@ export default function ModalUrl(props) {
 			<Modal.Header closeButton>
 				<Modal.Title>{props.title}</Modal.Title>
 			</Modal.Header>
-			<iframe
-				id='fred'
-				style={{ border: "1px solid #666CCC", height: "100vh" }}
-				title='PDF in an i-Frame'
-				src={url}
-				frameborder='1'
-				scrolling='auto'></iframe>
+			{/* <a href={url} target='_blank' rel='noopener noreferrer'>
+				pdf
+			</a> */}
+			{url.includes(".pdf") ? (
+				<DocViewer
+					pluginRenderers={DocViewerRenderers}
+					documents={docs}
+				/>
+			) : (
+				// <FileViewer
+				// 	fileType={"pdf"}
+				// 	filePath={url}
+				// 	onError={console.log("err")}
+				// />
+				<iframe
+					id='fred'
+					style={{
+						border: "1px solid #666CCC",
+						width: "100%",
+						height: "100vh",
+					}}
+					title='PDF in an i-Frame'
+					src={`${url}`}
+					frameborder='1'
+					scrolling='auto'
+				/>
+			)}
 		</Modal>
 	);
 }
