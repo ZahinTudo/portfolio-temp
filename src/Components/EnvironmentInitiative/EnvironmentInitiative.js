@@ -15,24 +15,38 @@ export default function EnvironmentInitiative() {
 			/>
 			<div className='custom_container'>
 				<div className='d-flex flex-wrap'>
-					<div className='col-12'>
-						<h3 className='title'>Environment Initiative</h3>
-						<p className='title_brief'>
-							“There is no Planet B” is a phrase that has stuck
-							with me since I first heard it several years{" "}
-							<br className='d-none d-md-inline-block' /> ago.
-							Inspired by this I’ve tried to do my part to promote
-							sustainability and environmental{" "}
-							<br className='d-none d-md-inline-block' />
-							awareness through various initiatives, including
-							spearheading community-wide waste{" "}
-							<br className='d-none d-md-inline-block' />
-							segregation initiatives through Mission RGB,
-							developing an environmental handbook and
-							<br className='d-none d-md-inline-block' />{" "}
-							curriculum, and leading food waste reduction efforts
-							in my school.
-						</p>
+					<div className='col-12 d-flex flex-wrap justify-content-between'>
+						<div className='col-sm-7 col-12'>
+							<h3 className='title'>Environment Initiative</h3>
+							<p className='title_brief'>
+								“There is no Planet B” is a phrase that has
+								stuck with me since I first heard it several
+								years{" "}
+								{/* <br className='d-none d-md-inline-block' /> */}
+								ago. Inspired by this I’ve tried to do my part
+								to promote sustainability and environmental{" "}
+								{/* <br className='d-none d-md-inline-block' /> */}
+								awareness through various initiatives, including
+								spearheading community-wide waste{" "}
+								{/* <br className='d-none d-md-inline-block' /> */}
+								segregation initiatives through Mission RGB,
+								developing an environmental handbook and
+								{/* <br className='d-none d-md-inline-block' />{" "} */}
+								curriculum, and leading food waste reduction
+								efforts in my school.
+							</p>
+						</div>
+						<div className='position-relative d-flex justify-content-center col-sm-5 col-12'>
+							<video
+								width='100%'
+								// height='200'
+								poster='/assets/envinitiative/rgb.png'
+								controls>
+								<source
+									src='/assets/envinitiative/rgb.mp4'
+									type='video/mp4'></source>
+							</video>
+						</div>
 					</div>
 					{/* <div className='col-12 col-md-7'>
 						<div className='image_wrapper'>
@@ -67,40 +81,45 @@ export default function EnvironmentInitiative() {
 						</h3>
 
 						<p className='title_brief' style={{}}>
-							<p>
-								One of the biggest issues confronting our planet
-								today is climate change. In fact, it is more
-								appropriate to term it as a very real and
-								impending climate ‘emergency’ or ‘crisis’. The
-								effects of such a climate crisis have already
-								started manifesting in more ways than one and it
-								is only deteriorating every year. Hence, the
-								time to act is now. This is our planet and each
-								one of us is a stakeholder in it. As such, it
-								becomes imperative for us to be aware of the
-								significance of the climate crisis and do our
-								part in mitigating it. While interacting with my
-								peers, I came to the realization that a lot of
-								youngsters, as well as children, are gradually
-								learning the importance of protecting the
-								environment. But very few of them know how to
-								move forward and implement their ideas.
-							</p>{" "}
-							<p>
-								In the spirit of encouraging such efforts
-								towards sustainability, I have put together the
-								Green Handbook, a student-facing educational
-								resource. I hope this makes it easier for
-								students to think about how to help protect the
-								environment and implement their ideas by
-								volunteering and starting projects in their own
-								communities. Each chapter has been specifically
-								designed to include topics that are educational.
-								They also incorporate fun activities that can
-								help drive change and in its own capacity, allow
-								the new generation to see a greener and cleaner
-								tomorrow.
-							</p>
+							<div>
+								<p>
+									One of the biggest issues confronting our
+									planet today is climate change. In fact, it
+									is more appropriate to term it as a very
+									real and impending climate ‘emergency’ or
+									‘crisis’. The effects of such a climate
+									crisis have already started manifesting in
+									more ways than one and it is only
+									deteriorating every year. Hence, the time to
+									act is now. This is our planet and each one
+									of us is a stakeholder in it. As such, it
+									becomes imperative for us to be aware of the
+									significance of the climate crisis and do
+									our part in mitigating it. While interacting
+									with my peers, I came to the realization
+									that a lot of youngsters, as well as
+									children, are gradually learning the
+									importance of protecting the environment.
+									But very few of them know how to move
+									forward and implement their ideas.
+								</p>{" "}
+								<p>
+									In the spirit of encouraging such efforts
+									towards sustainability, I have put together
+									the Green Handbook, a student-facing
+									educational resource. I hope this makes it
+									easier for students to think about how to
+									help protect the environment and implement
+									their ideas by volunteering and starting
+									projects in their own communities. Each
+									chapter has been specifically designed to
+									include topics that are educational. They
+									also incorporate fun activities that can
+									help drive change and in its own capacity,
+									allow the new generation to see a greener
+									and cleaner tomorrow.
+								</p>
+							</div>
 						</p>
 						<div className='mt-5 d-flex align-items-center'>
 							<a
@@ -132,7 +151,7 @@ export default function EnvironmentInitiative() {
 							</a>
 						</div>
 					</div>
-					<div className='col-12 col-md-7 d-flex justify-content-end'>
+					<div className='col-12 col-md-7 d-flex  justify-content-end'>
 						<div className='handbook_image'>
 							<img
 								className='img-fluid'
@@ -220,7 +239,7 @@ export default function EnvironmentInitiative() {
 								</a>
 							</div>
 						</div>
-						<div>
+						{/* <div>
 							<div className='position-relative d-flex justify-content-center'>
 								<video
 									width='70%'
@@ -232,7 +251,7 @@ export default function EnvironmentInitiative() {
 										type='video/mp4'></source>
 								</video>
 							</div>
-						</div>
+						</div> */}
 					</div>
 				</div>
 			</div>
