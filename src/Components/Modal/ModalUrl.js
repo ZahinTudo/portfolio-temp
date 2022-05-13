@@ -5,20 +5,9 @@ import { Document, Page } from "react-pdf/dist/esm/entry.webpack";
 import DocViewer, { DocViewerRenderers } from "react-doc-viewer";
 
 export default function ModalUrl(props) {
-	// const [show, setShow] = useState(false);
-	const [numPages, setNumPages] = useState(null);
-	const [pageNumber, setPageNumber] = useState(1);
-
 	const url = props.url;
 
-	function onDocumentLoadSuccess({ numPages }) {
-		// alert("asfd");
-		setNumPages(numPages);
-		setPageNumber(1);
-	}
-	useEffect(() => {
-		// dispatch(setPDFPaginated(!paginated));
-	}, []);
+	useEffect(() => {}, []);
 	const docs = [
 		{ uri: url }, // Local File
 	];

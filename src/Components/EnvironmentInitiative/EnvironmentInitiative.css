@@ -59,7 +59,10 @@
 	/* padding-right: 10rem; */
 }
 .envinitiative .handbook .title_brief.rgb_mission {
-	padding-right: 7rem;
+	/* padding-right: 7rem; */
+}
+.envinitiative .handbook .certificate {
+	width: 75%;
 }
 .envinitiative .handbook .handbook_image.rgb_mission {
 	width: 75%;
@@ -93,6 +96,9 @@
 		padding-right: 0rem;
 	}
 	.envinitiative .handbook .handbook_image.rgb_mission {
+		width: 100%;
+	}
+	.envinitiative .handbook .certificate {
 		width: 100%;
 	}
 }

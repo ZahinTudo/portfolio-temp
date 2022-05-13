@@ -239,19 +239,16 @@ export default function EnvironmentInitiative() {
 								</a>
 							</div>
 						</div>
-						{/* <div>
-							<div className='position-relative d-flex justify-content-center'>
-								<video
-									width='70%'
-									// height='200'
-									poster='/assets/envinitiative/rgb.png'
-									controls>
-									<source
-										src='/assets/envinitiative/rgb.mp4'
-										type='video/mp4'></source>
-								</video>
+						<div>
+							<div className='position-relative d-flex justify-content-start'>
+								<img
+									className='img-fluid certificate'
+									src='/assets/envinitiative/certificate.png'
+									alt=''
+									srcset=''
+								/>
 							</div>
-						</div> */}
+						</div>
 					</div>
 				</div>
 			</div>
