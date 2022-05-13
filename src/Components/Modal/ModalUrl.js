@@ -1,10 +1,8 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import { Modal } from "react-bootstrap";
 import "./Modal.css";
 import { Document, Page } from "react-pdf/dist/esm/entry.webpack";
 import DocViewer, { DocViewerRenderers } from "react-doc-viewer";
-import FileViewer from "react-file-viewer";
-// import { CustomErrorComponent } from "custom-error";
 
 export default function ModalUrl(props) {
 	// const [show, setShow] = useState(false);
@@ -18,6 +16,9 @@ export default function ModalUrl(props) {
 		setNumPages(numPages);
 		setPageNumber(1);
 	}
+	useEffect(() => {
+		// dispatch(setPDFPaginated(!paginated));
+	}, []);
 	const docs = [
 		{ uri: url }, // Local File
 	];
@@ -41,11 +42,6 @@ export default function ModalUrl(props) {
 					documents={docs}
 				/>
 			) : (
-				// <FileViewer
-				// 	fileType={"pdf"}
-				// 	filePath={url}
-				// 	onError={console.log("err")}
-				// />
 				<iframe
 					id='fred'
 					style={{
