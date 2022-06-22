@@ -16,7 +16,9 @@ export default function InTheMedia() {
 			className='inTheMedia fadeEntry'
 			style={{ overflowX: "hidden" }}>
 			<div className='custom_container'>
-				<h3 className='title'>In the Media</h3>
+				<h3 className='title text-capitalize'>
+					awards and recognition
+				</h3>
 				{/* <p className='title_brief pe-5'>
 					Earth is the third planet from the Sun and the only
 					astronomical object known to harbor{" "}

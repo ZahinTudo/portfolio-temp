@@ -25,6 +25,11 @@
 	grid-gap: 1rem;
 	padding: 3rem inherit;
 }
+.gallary_wrapper .img {
+	min-height: 200px;
+	max-height: 350px;
+	overflow: hidden;
+}
 .gallary_wrapper .img .image_overlay {
 	display: flex;
 	flex-direction: column;

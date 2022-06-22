@@ -5,7 +5,7 @@ import "./DetailsCard.css";
 
 export default function ({ item }) {
 	// console.log(item);
-	const { title, topic, brief, link } = item;
+	const { title, topic, brief, link, mentor } = item;
 	const [modalShow, setModalShow] = React.useState(false);
 	const [url, setUrl] = React.useState("");
 	// const [title, setTitle] = React.useState("");
@@ -20,7 +20,9 @@ export default function ({ item }) {
 			/>
 			<div className='pe-5'>
 				<h3 className='title'>{title}</h3>
-				<p className=''>{topic}</p>
+				<p className=''>
+					{topic} Mentored By : <span>{mentor}</span>
+				</p>
 				<p>{brief}</p>
 
 				<a

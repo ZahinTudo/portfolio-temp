@@ -1,17 +1,19 @@
 [
 	{
 		"title": "Why do consumers get overwhelmed when there are so many choices?",
-		"topic": "Internation Journal of Social Science and Economic Research",
-		"image": "/assets/researchWork/research1.png",
+		"topic": "Internation Journal of Social Science and Economic Research. ",
+		"image": "/assets/researchWork/rc1.jpeg",
         "brief":"People are currently living in a world with a variety of options to choose from. Now people are forced to choose between careers, places to live, holiday destinations, and a number of other consumer products. While traditional economic models assume that large choice sets are beneficial for consumers, research from behavioral economics has found that consumers frequently avoid making choices in high choice set environments. In this paper, I review choice overload and choice aversion to understand why consumers get overwhelmed when presented with too many choices.",
-        "link":"/assets/researchWork/consumer.pdf"
+        "link":"/assets/researchWork/consumer.pdf",
+        "mentor":"Daniel Mirny, UCLA PhD "
 	},
 	{
 		"title": "The Effect of Covid-19 on the Indian Economy",
 		"topic": "",
-		"image": "/assets/researchWork/research2.png",
+		"image": "/assets/researchWork/rc2.jpeg",
         "brief":"Interested in understanding both the immediate and long-term impacts of Covid-19 on India’s economy, I analysed secondary and primary sources in the form of interviews with analysts at an MBB firm. Based on my findings, I concluded that, while the pandemic caused a temporary recession, India saw a V-shaped recovery as indicated by GDP growth, forex reserves, FDI and CAD.",
-        "link":"/assets/researchWork/Effect of Covid 19 on the Indian Economy.pdf"
+        "link":"/assets/researchWork/Effect of Covid 19 on the Indian Economy.pdf",
+        "mentor":"Roopa Purshottaman and Anindya Roy"
 	}
 	
 ]

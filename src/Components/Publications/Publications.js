@@ -20,7 +20,7 @@ export default function Publications() {
 	return (
 		<section id='publications' className='publications fadeEntry'>
 			<div className='custom_container_left'>
-				<h2 className='Head_title'>Essays & Publications</h2>
+				<h2 className='Head_title'>Publications</h2>
 				<p className='short_brief'>
 					My musings on Economics, Psychology and Environment,
 					submitted to academic <br /> competitions and published on

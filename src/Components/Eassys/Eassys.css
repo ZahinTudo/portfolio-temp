@@ -1,0 +1,21 @@
+.Essays {
+	padding-top: 7rem;
+	padding-bottom: 3rem;
+}
+.Essays .Head_title {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 6rem;
+	line-height: 9rem;
+	color: #0b132b;
+}
+.Essays .short_brief {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 1.125rem;
+	/* line-height: 160%; */
+	color: #0b132b;
+	margin-bottom: 1rem;
+}

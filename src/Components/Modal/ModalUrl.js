@@ -11,6 +11,8 @@ export default function ModalUrl(props) {
 	const docs = [
 		{ uri: url }, // Local File
 	];
+	console.log(docs);
+
 	return (
 		<Modal
 			fullscreen={true}
