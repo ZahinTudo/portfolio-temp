@@ -60,6 +60,20 @@
 	line-height: 140%;
 	color: #faf9f9;
 }
+.inTheMedia .overlay_title .title-0 {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 1.07rem;
+	/* line-height: inherit; */
+	color: #faf9f9;
+	display: block;
+	/* height: 0; */
+	/* visibility: hidden; */
+	/* opacity: 0; */
+	overflow: hidden;
+	transition: all 1s ease-in-out;
+}
 .inTheMedia .overlay_title .title {
 	font-family: Poppins;
 	font-style: normal;

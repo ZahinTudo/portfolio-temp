@@ -41,49 +41,69 @@ export default function InTheMedia() {
 									className='img-fluid'
 								/>
 								<div className='overlay_title position-absolute p-3'>
-									<span className=' title'>{item.title}</span>
-									<div className='d-flex justify-content-between align-items-center px-2'>
-										<div className='col-6'>
-											<div
-												className='py-2'
-												style={{ width: "50%" }}>
-												<img
-													style={{ height: "2rem" }}
-													src={item.media}
-													alt=''
-													className='img-fluid '
-												/>
-											</div>
-											<div className='date'>
-												{item.date}
-											</div>
-										</div>
-										<div className='col-6 text-end viewFullNews'>
-											<a
-												href={item.link}
-												className='d-inline-flex align-items-center text-white'
-												style={{
-													textDecoration: "none",
-												}}
-												target='_blank'
-												rel='noopener noreferrer'>
-												<span className='me-2'>
-													View Full News
-												</span>
-												<span>
+									{ind == 0 ? (
+										<span className=' title-0'>
+											{item.title}
+										</span>
+									) : (
+										<span className=' title'>
+											{item.title}
+										</span>
+									)}
+									{ind != 0 && (
+										<div className='d-flex justify-content-between align-items-center px-2'>
+											<div className='col-6'>
+												<div
+													className='pb-2 pt-3'
+													style={{ width: "50%" }}>
 													<img
 														style={{
-															width: "1rem",
+															height: "2rem",
 														}}
-														className='img-fluid'
-														src='/assets/linkArrow.png'
+														src={item.media}
 														alt=''
-														srcset=''
+														className='img-fluid '
 													/>
-												</span>
-											</a>
+												</div>
+												<div
+													className={
+														ind == 0
+															? `invisible`
+															: `` + `date`
+													}>
+													{item.date}
+												</div>
+											</div>
+											{item.link && (
+												<div className='col-6 text-end viewFullNews'>
+													<a
+														href={item.link}
+														className='d-inline-flex align-items-center text-white'
+														style={{
+															textDecoration:
+																"none",
+														}}
+														target='_blank'
+														rel='noopener noreferrer'>
+														<span className='me-2'>
+															View Full News
+														</span>
+														<span>
+															<img
+																style={{
+																	width: "1rem",
+																}}
+																className='img-fluid'
+																src='/assets/linkArrow.png'
+																alt=''
+																srcset=''
+															/>
+														</span>
+													</a>
+												</div>
+											)}
 										</div>
-									</div>
+									)}
 								</div>
 							</div>
 						))}
