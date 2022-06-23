@@ -2,7 +2,9 @@
 	background: #c8f0fc;
 
 	padding-top: 7rem;
-	padding-bottom: 3rem;
+	padding-bottom: 5rem;
+	/* padding-bottom: 3rem; */
+	/* height: max-content; */
 }
 .researchWork .Head_title {
 	font-family: Poppins;
