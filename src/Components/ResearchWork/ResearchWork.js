@@ -39,8 +39,8 @@ export default function ResearchWork() {
 					{Data.map((item, ind) => (
 						<div
 							key={"research" + ind}
-							className='position-relative'
-							style={{ height: "400px" }}>
+							className='position-relative col-md-5 col-12 my-2'
+							style={{ width: "" }}>
 							<img
 								className='img-fluid h-100'
 								src={item.image}
@@ -53,12 +53,16 @@ export default function ResearchWork() {
 									borderTopLeftRadius: "1.2rem",
 									backgroundColor: "#00000096",
 									bottom: 0,
-									minHeight: "max-content",
-									height: "12rem",
+									minHeight: "13rem",
+									height: "max-content",
 								}}>
-								<div className='position-relative h-100'>
-									<h3 className='title'>{item.title}</h3>
-									<h5>Mentored by : {item.mentor}</h5>
+								<div className='position-relative h-100 d-flex flex-column justify-content-between'>
+									<div>
+										<h3 className='title'>{item.title}</h3>
+										<p style={{ fontSize: "1.2rem" }}>
+											Mentored by : {item.mentor}
+										</p>
+									</div>
 									<span
 										onClick={() =>
 											handleModalPdfView(
@@ -66,7 +70,7 @@ export default function ResearchWork() {
 												item.link
 											)
 										}
-										className='text-white position-absolute'
+										className='text-white '
 										style={{
 											bottom: 0,
 											cursor: "pointer",
